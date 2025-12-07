@@ -39,7 +39,7 @@ window.addEventListener('scroll', function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
-/* 🟢 MENÚ HAMBURGUESA (móvil) */
+
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.querySelector('.nav-links');
 
