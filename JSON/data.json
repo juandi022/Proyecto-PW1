@@ -1,0 +1,22 @@
+{
+    "articles": [
+        {
+            "title": "La Feria Creativa",
+            "description": "Arte, cultura y creatividad en la Alianza Francesa se resumen en esta feria anual de arte y diseño.",
+            "image": "https://picsum.photos/seed/creative_fair/300/200",
+            "link": "#"
+        },
+        {
+            "title": "Mujeres en Carrera",
+            "description": "Rompiendo límites y creando oportunidades en el mundo laboral y profesional para las mujeres.",
+            "image": "https://picsum.photos/seed/women_in_career/300/200",
+            "link": "#"
+        },
+        {
+            "title": "Expo Creativa 20 años",
+            "description": "Una muestra del arte y la creatividad en la que la Alianza Francesa celebra dos décadas de innovación.",
+            "image": "https://picsum.photos/seed/expo_creativa/300/200",
+            "link": "#"
+        }
+    ]
+}
