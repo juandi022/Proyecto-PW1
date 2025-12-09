@@ -1,0 +1,220 @@
+/* === CARRUSEL HERO SIN BORDES === */
+
+.carousel-section {
+    width: 100vw !important;     /* ancho real de toda la pantalla */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+/* HERO bajo la barra fija sin bordes ni sombras */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px);  /* Ocupa pantalla completa ajustando header */
+    overflow: hidden;
+    background: #000;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0;             /* <--- sin espacios arriba/abajo/lados */
+    padding: 0;
+}
+
+/* Contenedor de imágenes */
+.carousel-images {
+    display: flex;
+    height: 100%;
+    transition: transform 0.7s ease-in-out;
+}
+
+/* Slide */
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    border: none !important;   /* evita bordes indeseados */
+}
+
+/* Imagen sin bordes ni redondeo */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 !important;  /* <--- NO REDONDEADO */
+    border: none !important;
+    display: block;
+}
+
+/* Gradiente inferior */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0)
+    );
+    z-index: 1;
+}
+
+/* Overlay (texto + botón) */
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 40px 40px;
+}
+
+/* Texto */
+.carousel-overlay p {
+    margin: 0;
+    max-width: 480px;
+    padding: 14px 20px;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+}
+
+/* Botón */
+.carousel-button {
+    padding: 14px 26px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.carousel-button:hover {
+    background-color: #00234d;
+    transform: translateY(-2px);
+}
+
+/* Flechas */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.carousel-control-prev { left: 18px; }
+.carousel-control-next { right: 18px; }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0,0,0,0.8);
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .carousel-overlay {
+        padding: 0 25px 30px;
+    }
+    .carousel-overlay p {
+        font-size: 1.05rem;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 20px 25px;
+    }
+    .carousel-overlay p {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 10px 14px;
+    }
+    .carousel-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 42px;
+        height: 42px;
+        font-size: 1.4rem;
+    }
+}
+
+/* === ARTÍCULOS === */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px 20px 60px;
+}
+
+.article-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: white;
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+    .articles { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .articles { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+    .articles { grid-template-columns: 1fr; }
+}
+
+/* TÍTULO debajo del HERO, no tapado */
+.titulo-elegante {
+    margin-top: 50px; /* Ya no necesita 140px porque el carrusel eliminó margin */
+}
