@@ -1,0 +1,383 @@
+/* ===========================
+   VARIABLES BÁSICAS
+=========================== */
+:root {
+    --rojo-af: #d11212;
+    --rojo-af-oscuro: #a10e0e;
+    --azul-af: #003366;
+    --gris-texto: #444444;
+    --gris-suave: #f4f5f8;
+    --blanco: #ffffff;
+
+    --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 14px 40px rgba(0, 0, 0, 0.18);
+
+    --font-titulos: "Playfair Display", "Georgia", "Times New Roman", serif;
+    --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   SECCIÓN BIENVENIDA (HERO)
+=========================== */
+
+.bienvenida {
+    padding: 90px 20px;
+    text-align: center;
+    color: var(--blanco);
+    background: radial-gradient(circle at top left, #ff4a4a, var(--rojo-af-oscuro));
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: var(--font-titulos);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.bienvenida h1 {
+    margin: 0;
+    font-size: inherit;
+}
+
+/* ===========================
+   CONTADORES – ÍCONOS UNIFORMES
+=========================== */
+
+.contadores {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px 10px;
+    background-color: var(--gris-suave);
+}
+
+@media (min-width: 992px) {
+    .contadores {
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 18px 18px 0 0;
+    }
+}
+
+.contador-item {
+    text-align: center;
+    max-width: 240px;
+    font-family: var(--font-texto);
+}
+
+/* ICONO */
+.contador-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    box-shadow: var(--sombra-suave);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease,
+        filter 0.3s ease;
+}
+
+/* Hover elegante */
+.contador-item:hover img {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: var(--sombra-hover);
+    background-color: #fff7f7;
+    filter: saturate(1.05);
+}
+
+/* NÚMERO (compatible con animación JS) */
+.contador-item span {
+    font-size: 2.1rem;
+    color: var(--rojo-af);
+    font-family: var(--font-titulos);
+    font-style: italic;
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Clase que se añade desde JS cuando empiezan a contar */
+.contador-item span.activo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* DESCRIPCIÓN */
+.contador-item p {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: var(--gris-texto);
+    line-height: 1.5;
+}
+
+/* ===========================
+   PANEL 1
+=========================== */
+
+.panel1 {
+    background: var(--rojo-af);
+    color: var(--blanco);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: var(--font-texto);
+    animation: fadeIn 0.9s ease-out;
+}
+
+.panel1 h2,
+.panel1 h3 {
+    font-family: var(--font-titulos);
+    margin-top: 0;
+}
+
+/* ===========================
+   CARRUSEL
+=========================== */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: var(--sombra-suave);
+    background-color: var(--blanco);
+    animation: fadeIn 1s ease-out;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item p {
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 1.1em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-family: var(--font-texto);
+}
+
+/* Botones del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid var(--rojo-af);
+    outline-offset: 2px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* ===========================
+   TÍTULO ELEGANTE
+=========================== */
+
+.titulo-elegante {
+    font-family: var(--font-titulos);
+    font-size: 2.3em;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: var(--rojo-af);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   NOTICIAS
+=========================== */
+
+.noticias {
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+    .noticias {
+        max-width: 1200px;
+        margin: 40px auto 0;
+    }
+}
+
+.titulo-noticias {
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--rojo-af);
+    font-family: var(--font-titulos);
+    margin-bottom: 30px;
+}
+
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.noticia-card {
+    background: var(--blanco);
+    border-radius: 14px;
+    box-shadow: var(--sombra-suave);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 0.7s ease-out;
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.noticia-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.noticia-card h3 {
+    font-size: 1.3rem;
+    margin: 15px;
+    color: var(--rojo-af);
+    font-family: var(--font-titulos);
+}
+
+.noticia-card p {
+    margin: 0 15px 15px 15px;
+    color: #555;
+    font-family: var(--font-texto);
+}
+
+.leer-mas {
+    display: block;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: var(--rojo-af);
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--font-texto);
+    letter-spacing: 0.03em;
+}
+
+.leer-mas:hover {
+    color: cornflowerblue;
+}
+
+/* ===========================
+   ANIMACIONES KEYFRAMES
+=========================== */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+    .bienvenida {
+        font-size: 2.1rem;
+        padding: 70px 16px;
+    }
+
+    .contadores {
+        gap: 24px;
+        padding: 30px 16px 10px;
+    }
+
+    .contador-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contador-item span {
+        font-size: 1.8rem;
+    }
+
+    .noticias {
+        padding: 30px 16px;
+    }
+}
+
+/* Respeto a usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
