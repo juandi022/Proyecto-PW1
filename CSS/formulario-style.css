@@ -1,0 +1,282 @@
+/* ===========================
+   VARIABLES (por si no hereda de index-style)
+=========================== */
+:root {
+    --rojo-af: #d11212;
+    --rojo-af-oscuro: #a10e0e;
+    --azul-af: #003366;
+    --gris-texto: #444444;
+    --gris-suave: #f4f5f8;
+    --blanco: #ffffff;
+
+    --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 14px 40px rgba(0, 0, 0, 0.18);
+
+    --font-titulos: "Playfair Display", "Georgia", "Times New Roman", serif;
+    --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   HERO DEL FORMULARIO
+=========================== */
+
+.form-hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(circle at top left, #ff4a4a, var(--rojo-af-oscuro));
+    color: var(--blanco);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.form-hero h1 {
+    font-family: var(--font-titulos);
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.form-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: var(--font-texto);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTENEDOR DEL FORMULARIO
+=========================== */
+
+.formulario-container {
+    max-width: 750px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+    animation: fadeUp 0.9s ease-out;
+}
+
+.formulario {
+    background: var(--blanco);
+    padding: 32px 28px;
+    border-radius: 18px;
+    box-shadow: var(--sombra-suave);
+    font-family: var(--font-texto);
+}
+
+/* CAMPOS */
+.campo {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--gris-texto);
+    font-size: 0.95rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 11px 12px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    font-size: 0.98rem;
+    font-family: var(--font-texto);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+    background-color: #fcfcfc;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* FOCUS ESTADO */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--rojo-af);
+    box-shadow: 0 0 0 3px rgba(209, 18, 18, 0.15);
+    background-color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* ===========================
+   BOTÓN ENVIAR
+=========================== */
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, var(--rojo-af), var(--rojo-af-oscuro));
+    color: var(--blanco);
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-texto);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: var(--sombra-suave);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-hover);
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.16);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+    .form-hero {
+        padding: 70px 18px;
+    }
+
+    .form-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .formulario {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+}
+
+/* Respeto a usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===========================
+   ERRORES DE VALIDACIÓN
+=========================== */
+
+.campo.campo-error input,
+.campo.campo-error select,
+.campo.campo-error textarea {
+    border-color: var(--rojo-af);
+    box-shadow: 0 0 0 3px rgba(209, 18, 18, 0.15);
+}
+
+.mensaje-error {
+    font-size: 0.8rem;
+    color: var(--rojo-af);
+    margin-top: 4px;
+    min-height: 14px;
+}
+
+/* ===========================
+   OVERLAY ÉXITO
+=========================== */
+
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 99999;
+}
+
+.success-overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.success-modal {
+    background: #ffffff;
+    padding: 30px 26px;
+    border-radius: 18px;
+    text-align: center;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.25);
+    animation: fadeUp 0.4s ease-out;
+    font-family: var(--font-texto);
+}
+
+.success-modal h2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-family: var(--font-titulos);
+    font-size: 1.6rem;
+    color: var(--azul-af);
+}
+
+.success-modal p {
+    margin: 0 0 18px;
+    font-size: 0.97rem;
+    color: var(--gris-texto);
+}
+
+/* ICONO CHECK */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid #2ecc71;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2ecc71;
+    font-size: 2.4rem;
+    font-weight: 700;
+    animation: success-pop 0.6s ease-out;
+}
+
+@keyframes success-pop {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Botón cerrar */
+.btn-cerrar-success {
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: none;
+    background: var(--rojo-af);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: var(--font-texto);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-cerrar-success:hover {
+    background: var(--rojo-af-oscuro);
+    transform: translateY(-1px);
+    box-shadow: var(--sombra-suave);
+}

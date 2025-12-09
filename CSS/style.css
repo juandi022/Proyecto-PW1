@@ -235,26 +235,84 @@ main {
     user-select: none;
 }
 
-/* ============================================
-   FOOTER
-============================================ */
-footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px 0;
+/* =============================
+   FOOTER — ESTILO ELEGANTE AF
+============================= */
+
+.footer-af {
+    background-color: var(--azul-af);
+    color: #ffffff;
+    padding: 40px 0 25px;
     text-align: center;
+    margin-top: 60px;
 }
 
-footer .contact a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 1.1em;
+.footer-title {
+    font-family: var(--font-titulos);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-footer .contact a:hover {
-    color: #ffcc00;
+.footer-text {
+    font-family: var(--font-texto);
+    font-size: 1.05rem;
+    margin: 6px 0;
+    opacity: 0.9;
 }
+
+.footer-copy {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    font-family: var(--font-texto);
+}
+
+/* =============================
+   FOOTER — ESTILO GLOBAL AF
+============================= */
+
+/* Aplica tanto a <footer> como a <footer class="footer-af"> */
+footer,
+.footer-af {
+    background-color: var(--azul-af, #003366); /* fallback por si acaso */
+    color: #ffffff;
+    padding: 40px 0 25px;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-texto, "Inter", system-ui, sans-serif);
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-family: var(--font-titulos, "Playfair Display", serif);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-text {
+    font-size: 1.05rem;
+    margin: 6px 0;
+    opacity: 0.9;
+}
+
+.footer-copy {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+
 
 /* ============================================
    TÍTULO ELEGANTE
@@ -365,3 +423,43 @@ footer .contact a:hover {
     }
 }
 
+/* Menú de navegación (desktop) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    border-bottom: 2px solid crimson;
+}
+
+/* ========= DROPDOWNS EN ESCRITORIO (FORZADO) ========= */
+@media (min-width: 769px) {
+
+    /* Estado base: oculto */
+    .nav-links .dropdown .dropdown-menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease;
+    }
+
+    /* Al pasar el mouse por encima de Cursos / Cultura */
+    .nav-links .dropdown:hover > .dropdown-menu {
+        display: block !important;   /* se impone sobre cualquier style="display:none" */
+        opacity: 1;
+        visibility: visible;
+    }
+}
