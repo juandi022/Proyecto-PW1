@@ -1,0 +1,211 @@
+.panel1 {
+    background-color: crimson;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.panel1 img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 180px;
+}
+
+.panel1 h3 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+
+.main-contenido {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.descripcion {
+    width: 100%;
+    padding: 60px 5%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.descripcion img {
+    display: block;      
+    margin: 0 auto 20px;
+    max-width: 300px;
+}
+
+.descripcion-subt {
+    color: crimson;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descripcion p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    max-width: 850px;
+    margin: 0 auto 20px; 
+    text-align: center;  
+}
+
+
+.historia {
+    width: 100%;
+    background-color: crimson;
+    text-align: center;
+    padding: 60px 5%;
+    box-sizing: border-box;
+}
+
+.historia img {
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.historia h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.historia p {
+    color: white;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+
+.Mision,
+.Valores {
+    width: 100%;
+    padding: 60px 5%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mision img,
+.Valores img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.Mision h2,
+.Valores h2 {
+    color: crimson;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.Mision p,
+.Valores ul {
+    max-width: 850px;
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Alinear en pantallas grandes */
+@media (min-width: 768px) {
+    .Mision {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .Valores {
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+
+.Valores ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.Valores ul li {
+    margin-bottom: 10px;
+}
+
+
+.comite {
+    width: 100%;
+    text-align: center;
+    padding: 60px 5%;
+    box-sizing: border-box;
+}
+
+.comite h1 {
+    color: crimson;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.comite img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    display: block;
+
+}
+
+
+
+.instituciones {
+    width: 100%;
+    text-align: center;
+    padding: 60px 5%;
+    box-sizing: border-box;
+}
+
+.instituciones h1 {
+    color: crimson;
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+/* Contenedor horizontal */
+.instituciones-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Cada institución */
+.institucion {
+    width: 180px;
+    text-align: center;
+}
+
+.institucion img {
+    max-width: 140px;
+    margin: 0 auto 10px;
+}
+
+.institucion span {
+    display: block;
+    color: crimson;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    font-size: 0.9rem;
+    font-style: italic;
+}

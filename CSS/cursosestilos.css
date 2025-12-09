@@ -1,0 +1,83 @@
+.intro-cursos {
+    width: 100%;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: crimson;
+}
+.intro-cursos h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.intro-cursos p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: white;
+}
+
+
+.curso-seccion {
+    width: 100%;
+    padding: 50px 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.curso-seccion h2 {
+    font-size: 2rem;
+    color: crimson;
+    margin-bottom: 40px;
+}
+
+.curso-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.curso-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.curso-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.curso-card h3 {
+    font-size: 1.3rem;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.curso-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .curso-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
