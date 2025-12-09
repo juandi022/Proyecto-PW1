@@ -1,91 +1,110 @@
-
-
-.voluntariado-intro h1 {
-    font-size: 2.3rem;
-    color: crimson;
-    margin-bottom: 20px;
-}
-
-.voluntariado-intro p {
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.3rem;
-    line-height: 1.6;
-}
-
-.voluntariado-tarjetas {
+/* INTRO BECAS */
+.becas-intro {
     width: 100%;
     padding: 60px 5%;
     text-align: center;
     box-sizing: border-box;
 }
 
-.voluntariado-tarjetas h2 {
+.becas-intro h1 {
+    font-size: 2.3rem;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.becas-intro p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+
+/* TARJETAS BECAS */
+.becas-tarjetas {
+    width: 100%;
+    padding: 60px 5%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.becas-tarjetas h2 {
     color: crimson;
     font-size: 2rem;
     margin-bottom: 40px;
 }
 
-/* Contenedor tipo galería */
-.voluntariado-contenedor {
+.becas-contenedor {
     display: flex;
-    justify-content: center; 
-    align-items:normal;
-    flex-wrap: wrap;           
-    gap: 20px;            
+    justify-content: center;   /* ✔ Centrado */
+    align-items: flex-start;
+    flex-wrap: wrap;           /* ✔ Se acomodan igual que las otras tarjetas */
+    gap: 30px;
 }
 
-.vol-card {
+.beca-card {
     width: 300px;
     background: white;
-    border-radius: 15px;       
+    border-radius: 15px;        /* ✔ igual que las tarjetas de cursos */
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
     overflow: hidden;
     transition: transform 0.3s ease;
     text-align: center;
 }
 
-.vol-card:hover {
+.beca-card:hover {
     transform: translateY(-5px);
 }
 
-.vol-card img {
+.beca-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.vol-card h3 {
+.beca-card h3 {
     color: crimson;
     font-size: 1.4rem;
     margin-top: 15px;
 }
 
-.vol-card p {
+.beca-card p {
     padding: 0 20px 25px;
     line-height: 1.6;
     font-size: 1.1rem;
     color: #333;
 }
 
-.vol-contacto { 
-    width: 100%; 
+
+/* CONTACTO BECAS */
+.becas-contacto {
+    width: 100%;
     padding: 60px 5%;
     text-align: center;
-    box-sizing: border-box; 
-} 
-.vol-contacto h2 { 
+    box-sizing: border-box;
+}
+
+.becas-contacto h2 {
     color: crimson;
     font-size: 2rem;
-    margin-bottom: 20px; 
-} 
-.vol-contacto p {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-} 
-.correo, .telefono {
+    margin-bottom: 20px;
+}
+
+.correo,
+.telefono {
     font-size: 1.3rem;
     margin-top: 10px;
     font-weight: bold;
     color: #444;
+}
+
+/* BECAS HEADER (similar a .bienvenida) */
+.becas-header {
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    background-color: crimson;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
 }
