@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alianza Francesa HN - Francés para adultos</title>
+    <title>Contáctenos - Alianza Francesa HN</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="https://aftegucigalpa.hn/wp-content/uploads/2025/06/cropped-AF-Logo-01-180x180.png">
+
+    <!-- TIPOGRAFÍAS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS GLOBAL + ESPECÍFICO -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/cursos-adultos-style.css">
+    <link rel="stylesheet" href="CSS/contacto-style.css">
 </head>
 <body>
-
- 
-<!-- Barra roja superior -->
+    <!-- Barra roja superior -->
     <header class="header-red">
         <div class="container">
             <div class="search-social">
@@ -19,12 +24,8 @@
                     <input type="text" id="search-input" placeholder="Buscar...">
                     <div class="search-results" id="search-results"></div>
                 </div>
-
-               <div class="search-social">
-                <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Buscar...">
-                    <div class="search-results" id="search-results"></div>
-                </div>                
+ 
+                
                 <div class="social-media">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/afdetegucigalpa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -52,7 +53,8 @@
             </div>
     </header>
 
-<nav class="header-white">
+    <!-- Barra blanca con logo y navegación -->
+    <nav class="header-white">
         <div class="container">
             <div class="logo">
                 <img src="SRC/logo.jpg" alt="Logo Alianza Francesa">
@@ -63,21 +65,21 @@
 
             <!-- Menú principal con dropdowns -->
             <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
 
-            <li class="dropdown">
-                <a href="cursos.html" class="active">Cursos</a>
-                <ul class="dropdown-menu">
-                    <li><a href="curso-ninos.html" class="active">Francés para niños</a></li>
-                    <li><a href="curso-adolescentes.html">Francés para adolescentes</a></li>
-                    <li><a href="curso-adultos.html">Francés para adultos</a></li>
-                    <li><a href="becas.html">Becas</a></li>
-                </ul>
-            </li>
+                <li class="dropdown">
+                    <a href="cursos.html">Cursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="curso-ninos.html">Francés para niños</a></li>
+                        <li><a href="curso-adolescentes.html">Francés para adolescentes</a></li>
+                        <li><a href="curso-adultos.html">Francés para adultos</a></li>
+                        <li><a href="becas.html">Becas</a></li>
+                    </ul>
+                </li>
 
-            <li class="dropdown">
-                    <a href="cultura.html" class="active">Cultura</a>
+                <li class="dropdown">
+                    <a href="cultura.html">Cultura</a>
                     <ul class="dropdown-menu">
                         <li><a href="eventosculturales.html">Eventos culturales</a></li>
                         <li><a href="RevistaCultural.html">Revista Cultural</a></li>
@@ -85,52 +87,94 @@
                     </ul>
                 </li>
 
-            <li><a href="comoayudar.html">Como Ayudar</a></li>    
-
-            <li><a href="Contactenos.html">Contáctenos</a></li>
-        </ul>
-    </div>
-</nav>
-
-<main>
-    <section class="intro-cursos">
-        <h1>Francés para adultos</h1>
-        <p>
-            Cursos flexibles que se adaptan a tus horarios y objetivos: desde principiantes absolutos hasta
-            niveles avanzados orientados a la certificación internacional.
-        </p>
-    </section>
-
-    <section class="curso-seccion">
-        <h2>Modalidades para adultos</h2>
-        <p class="curso-subtitulo">Elige el ritmo y formato que mejor se ajusta a ti.</p>
-
-        <div class="curso-tarjetas">
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/Adultos1.jpg" alt="Adulto regular">
-                <h3>Adulto Regular</h3>
-                <p>Clases bimestrales en horarios matutinos o vespertinos.</p>
-                <span class="precio">L 3,900 por bimestre</span>
-            </div>
-
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/Adultos2.jpg" alt="Adulto intensivo">
-                <h3>Adulto Intensivo</h3>
-                <p>Ideal para avanzar rápido por razones académicas o laborales.</p>
-                <span class="precio">L 6,500 por bimestre</span>
-            </div>
-
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/AdulAdol3.jpg" alt="Clases privadas">
-                <h3>Clases privadas</h3>
-                <p>Sesiones uno a uno adaptadas a objetivos específicos.</p>
-                <span class="precio">Tarifa según plan</span>
-            </div>
+                <li><a href="comoayudar.html">Cómo Ayudar</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
         </div>
-    </section>
-</main>
+    </nav>
 
-<footer class="footer-af">
+    <main>
+        <!-- HERO / TÍTULO -->
+        <section class="contacto-hero">
+            <h1>Contáctenos</h1>
+            <p>Será un placer atenderte y acompañarte en tu camino hacia el francés.</p>
+        </section>
+
+        <!-- INTRO TEXTUAL -->
+        <section class="contacto-intro">
+            <p>
+                Estamos aquí para acompañarte en tu primer paso hacia el francés y la cultura francófona.
+                Si tienes consultas sobre nuestros cursos, inscripciones, eventos culturales o posibles
+                colaboraciones, no dudes en contactarnos.
+            </p>
+            <p>
+                <strong>¡Será un placer atenderte!</strong>
+            </p>
+        </section>
+
+        <!-- LAYOUT FORMULARIO + INFO -->
+        <section class="contacto-layout">
+            <!-- Columna izquierda: formulario -->
+            <div class="contacto-card contacto-form-card">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contacto-form" class="contacto-form">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Columna derecha: información de contacto -->
+            <div class="contacto-card contacto-info-card">
+                <h2>Información de contacto</h2>
+
+                <p><strong>Dirección:</strong><br>
+                    Calle Llama del Bosque, Lomas del Guijarro<br>
+                    <span class="detalle">(a 100 m del Instituto Sagrado Corazón)</span>
+                </p>
+
+                <p><strong>Teléfono:</strong><br>
+                    +504 9430-9128 / 9430-9135
+                </p>
+
+                <p><strong>Correo electrónico:</strong><br>
+                    <a href="mailto:asistenteadministrativa@aftegucigaIpa.hn">
+                        asistenteadministrativa@aftegucigaIpa.hn
+                    </a>
+                </p>
+
+                <div class="horarios">
+                    <h3>Horarios de atención</h3>
+                    <ul>
+                        <li>Martes a viernes: 8:30 am – 5:00 pm</li>
+                        <li>Sábado: 8:00 am – 2:00 pm</li>
+                        <li>Domingo y lunes: <span class="cerrado">CERRADO</span></li>
+                    </ul>
+                </div>
+
+                <p class="mensaje-final">
+                    ¡Visítanos, llámanos o envíanos un mensaje!<br>
+                    Nuestro equipo responderá tus consultas lo antes posible.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-af">
     <div class="container footer-content">
 
         <h3 class="footer-title">Contacto</h3>
@@ -154,6 +198,6 @@
     </div>
 </footer>
 
-<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

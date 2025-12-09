@@ -1,16 +1,14 @@
-:root {
+﻿:root {
     --rojo-af: #d11212;
     --rojo-af-oscuro: #a60e0e;
     --azul-af: #003366;
     --gris-fondo: #f4f5f8;
 }
 
-/* Fondo general bajo el hero */
 main {
     background-color: var(--gris-fondo);
 }
 
-/* Hero */
 .intro-cursos {
     padding: 80px 8% 70px;
     text-align: center;
@@ -32,7 +30,6 @@ main {
     line-height: 1.9;
 }
 
-/* Sección principal */
 .curso-seccion {
     max-width: 1150px;
     margin: 0 auto;
@@ -53,7 +50,6 @@ main {
     margin-bottom: 35px;
 }
 
-/* Tarjetas */
 .curso-tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +101,6 @@ main {
     color: var(--rojo-af);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .curso-card {
         width: 100%;
@@ -117,21 +112,15 @@ main {
     }
 }
 
-/* ===========================
-   ANIMACIONES – CURSOS ESPECÍFICOS
-=========================== */
-
-/* Hero de la categoría */
 .intro-cursos {
     animation: fadeInDown 0.8s ease-out;
 }
 
-/* Tarjetas de planes dentro de la categoría (bimestre, cuatri, etc.) */
 .curso-card {
     animation: fadeUp 0.7s ease-out;
 }
 
-/* Secciones Bimestre / Cuatrimestre / Semiprivados */
 .curso-seccion {
     animation: fadeIn 0.9s ease-out;
 }
+

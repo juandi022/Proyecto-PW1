@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alianza Francesa HN - Francés para adultos</title>
+    <title>Solicitar Información</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="https://aftegucigalpa.hn/wp-content/uploads/2025/06/cropped-AF-Logo-01-180x180.png">
+
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS global + específico -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/cursos-adultos-style.css">
+    <link rel="stylesheet" href="CSS/formulario-style.css">
 </head>
 <body>
-
- 
-<!-- Barra roja superior -->
+    <!-- Barra roja superior -->
     <header class="header-red">
         <div class="container">
             <div class="search-social">
@@ -20,11 +25,7 @@
                     <div class="search-results" id="search-results"></div>
                 </div>
 
-               <div class="search-social">
-                <div class="search-container">
-                    <input type="text" id="search-input" placeholder="Buscar...">
-                    <div class="search-results" id="search-results"></div>
-                </div>                
+               
                 <div class="social-media">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/afdetegucigalpa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -52,7 +53,8 @@
             </div>
     </header>
 
-<nav class="header-white">
+    <!-- BARRA BLANCA / NAV -->
+    <nav class="header-white">
         <div class="container">
             <div class="logo">
                 <img src="SRC/logo.jpg" alt="Logo Alianza Francesa">
@@ -87,50 +89,89 @@
 
             <li><a href="comoayudar.html">Como Ayudar</a></li>    
 
-            <li><a href="Contactenos.html">Contáctenos</a></li>
+            <li><a href="#">Contáctenos</a></li>
         </ul>
     </div>
 </nav>
 
-<main>
-    <section class="intro-cursos">
-        <h1>Francés para adultos</h1>
-        <p>
-            Cursos flexibles que se adaptan a tus horarios y objetivos: desde principiantes absolutos hasta
-            niveles avanzados orientados a la certificación internacional.
-        </p>
-    </section>
+    <main>
+        <!-- HERO DEL FORMULARIO -->
+        <section class="form-hero">
+            <h1>Solicitar información de inscripción</h1>
+            <p>Completa el formulario y te escribiremos con los detalles de horarios, niveles, precios y requisitos.</p>
+        </section>
 
-    <section class="curso-seccion">
-        <h2>Modalidades para adultos</h2>
-        <p class="curso-subtitulo">Elige el ritmo y formato que mejor se ajusta a ti.</p>
-
-        <div class="curso-tarjetas">
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/Adultos1.jpg" alt="Adulto regular">
-                <h3>Adulto Regular</h3>
-                <p>Clases bimestrales en horarios matutinos o vespertinos.</p>
-                <span class="precio">L 3,900 por bimestre</span>
-            </div>
-
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/Adultos2.jpg" alt="Adulto intensivo">
-                <h3>Adulto Intensivo</h3>
-                <p>Ideal para avanzar rápido por razones académicas o laborales.</p>
-                <span class="precio">L 6,500 por bimestre</span>
-            </div>
-
-            <div class="curso-card">
-                <img src="IMAGENES/RECURSOSM/AdulAdol3.jpg" alt="Clases privadas">
-                <h3>Clases privadas</h3>
-                <p>Sesiones uno a uno adaptadas a objetivos específicos.</p>
-                <span class="precio">Tarifa según plan</span>
-            </div>
+        <!-- FORMULARIO -->
+        <section class="formulario-container">
+    <form class="formulario" id="form-info">
+        <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre completo">
+            <small class="mensaje-error"></small>
         </div>
-    </section>
-</main>
 
-<footer class="footer-af">
+        <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+            <small class="mensaje-error"></small>
+        </div>
+
+        <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ejemplo: 9999-9999">
+            <small class="mensaje-error"></small>
+        </div>
+
+        <div class="campo">
+            <label for="curso">Curso de interés</label>
+            <select id="curso" name="curso" required>
+                <option value="">Selecciona una opción</option>
+                <option value="ninos">Francés para niños</option>
+                <option value="adolescentes">Francés para adolescentes</option>
+                <option value="adultos_regular">Adultos regular</option>
+                <option value="adultos_intensivo">Adultos intensivo</option>
+                <option value="semiprivado">Semiprivado</option>
+            </select>
+            <small class="mensaje-error"></small>
+        </div>
+
+        <div class="campo">
+            <label for="modalidad">Modalidad preferida</label>
+            <select id="modalidad" name="modalidad">
+                <option value="">Selecciona una opción</option>
+                <option value="presencial">Presencial</option>
+                <option value="en_linea">En línea</option>
+                <option value="mixta">Mixta</option>
+                <option value="indiferente">Indiferente</option>
+            </select>
+            <small class="mensaje-error"></small>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Mensaje o consulta</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos si ya tienes nivel de francés, horarios disponibles, etc."></textarea>
+            <small class="mensaje-error"></small>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar solicitud</button>
+    </form>
+</section>
+
+<div class="success-overlay" id="success-overlay">
+    <div class="success-modal">
+        <div class="success-icon">
+            <span>✓</span>
+        </div>
+        <h2>Solicitud enviada</h2>
+        <p>Su solicitud ha sido enviada. Pronto nos contactaremos con usted.</p>
+        <button type="button" class="btn-cerrar-success" id="btn-cerrar-success">
+            Cerrar
+        </button>
+    </div>
+</div>
+
+    <!-- Footer igual al index -->
+    <footer class="footer-af">
     <div class="container footer-content">
 
         <h3 class="footer-title">Contacto</h3>
@@ -154,6 +195,6 @@
     </div>
 </footer>
 
-<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

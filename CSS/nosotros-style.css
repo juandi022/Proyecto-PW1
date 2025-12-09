@@ -1,6 +1,4 @@
-/* ============================
-   VARIABLES BÁSICAS
-============================ */
+﻿
 :root {
     --rojo-af: #d11212;
     --rojo-af-oscuro: #a70e0e;
@@ -9,16 +7,10 @@
     --fondo-claro: #ffffff;
 }
 
-/* ============================
-   AJUSTES GENERALES SOLO PARA ESTA PÁGINA
-============================ */
-
-/* Por si el CSS general agrega márgenes/padding al main */
 main {
-    margin-top: 120px; /* espacio para las dos barras fijas */
+    margin-top: 120px; 
 }
 
-/* Títulos elegantes reutilizados */
 .titulo-elegante {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 2.3em;
@@ -29,16 +21,11 @@ main {
     margin: 40px 0 20px;
 }
 
-/* ============================
-   HERO / SOBRE LA ALIANZA
-   (sección con imagen de fondo)
-============================ */
-
 .sobre-af {
     position: relative;
-    width: 100vw;                /* ocupar todo el ancho de la ventana */
+    width: 100vw;                
     left: 50%;
-    margin-left: -50vw;          /* truco para quitar cualquier borde blanco lateral */
+    margin-left: -50vw;          
     margin-right: -50vw;
     overflow: hidden;
 
@@ -47,16 +34,14 @@ background-image: url("../SRC/FONDO.png");
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 80px 0 110px;       /* alto del hero */
+    padding: 80px 0 110px;       
     color: #ffffff;
 }
 
-/* El div .sobre-af-image no lo usamos; se deja sin estilo para que no moleste */
 .sobre-af-image {
     display: none;
 }
 
-/* Capa oscura sobre la foto */
 .sobre-af-overlay {
     position: absolute;
     inset: 0;
@@ -64,7 +49,6 @@ background-image: url("../SRC/FONDO.png");
     z-index: 1;
 }
 
-/* Contenido encima de la imagen y overlay */
 .sobre-af-content {
     position: relative;
     z-index: 2;
@@ -73,7 +57,6 @@ background-image: url("../SRC/FONDO.png");
     padding: 0 24px;
 }
 
-/* Título elegante dentro del hero en blanco y alineado a la izquierda */
 .sobre-af-content .titulo-elegante {
     color: #ffffff;
     text-align: left;
@@ -81,7 +64,6 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 10px;
 }
 
-/* Intro e historia dentro del hero */
 .sobre-af-content .intro,
 .sobre-af-content p {
     font-size: 1.08rem;
@@ -96,12 +78,10 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 8px;
 }
 
-/* Subtítulo “Nuestra Misión y Valores” dentro del hero */
 .sobre-af-content h2.titulo-elegante:nth-of-type(2) {
     margin-top: 30px;
 }
 
-/* Grid de Misión / Valores sobre la imagen */
 .nosotros-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -145,7 +125,6 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 6px;
 }
 
-/* Hover elegante en las tarjetas Misión / Valores */
 .nosotros-card::before {
     content: "";
     position: absolute;
@@ -164,10 +143,6 @@ background-image: url("../SRC/FONDO.png");
 .nosotros-card:hover::before {
     opacity: 1;
 }
-
-/* ============================
-   CTA INSCRIPCIÓN
-============================ */
 
 .cta-inscripcion {
     background-color: var(--azul-af);
@@ -208,11 +183,6 @@ background-image: url("../SRC/FONDO.png");
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
 }
 
-/* ============================
-   BLOQUES INFERIORES (COMITÉ,
-   DOCENTES, MANTENIMIENTO, INSTITUCIONES)
-============================ */
-
 .nosotros-bloque {
     max-width: 1100px;
     margin: 50px auto;
@@ -231,7 +201,6 @@ background-image: url("../SRC/FONDO.png");
     margin-top: 8px;
 }
 
-/* Grid general para tarjetas (comité, docentes, etc.) */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -239,7 +208,6 @@ background-image: url("../SRC/FONDO.png");
     margin-top: 30px;
 }
 
-/* Tarjeta base */
 .team-card {
     position: relative;
     background: var(--fondo-claro);
@@ -256,7 +224,6 @@ background-image: url("../SRC/FONDO.png");
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagen redonda para personas */
 .team-img {
     width: 110px;
     height: 110px;
@@ -265,7 +232,6 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 10px;
 }
 
-/* Imagen para instituciones */
 .institucion-img {
     width: 170px;
     max-width: 100%;
@@ -273,7 +239,6 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 12px;
 }
 
-/* Texto de tarjetas */
 .team-card h3 {
     font-size: 1.1rem;
     color: var(--azul-af);
@@ -293,10 +258,6 @@ background-image: url("../SRC/FONDO.png");
     color: var(--rojo-af);
     word-break: break-word;
 }
-
-/* ============================
-   RESPONSIVE
-============================ */
 
 @media (max-width: 992px) {
     .sobre-af {
@@ -342,21 +303,14 @@ background-image: url("../SRC/FONDO.png");
     animation: fadeIn 0.9s ease-out;
 }
 
-/* ===========================
-   ANIMACIONES – NOSOTROS
-=========================== */
-
-/* Hero con la imagen de fondo */
 .sobre-af {
     animation: fadeInDown 0.9s ease-out;
 }
 
-/* Tarjetas de Misión / Valores */
 .nosotros-card {
     animation: fadeUp 0.7s ease-out;
 }
 
-/* Bloques inferiores (comité, docentes, instituciones) */
 .nosotros-bloque {
     animation: fadeIn 0.9s ease-out;
 }
@@ -364,3 +318,4 @@ background-image: url("../SRC/FONDO.png");
 .team-card {
     animation: fadeUp 0.7s ease-out;
 }
+

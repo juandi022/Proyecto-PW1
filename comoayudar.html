@@ -3,124 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donaciones - Alianza Francesa HN</title>
+    <title>Cómo Ayudar - Alianza Francesa HN</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="https://aftegucigalpa.hn/wp-content/uploads/2025/06/cropped-AF-Logo-01-180x180.png">
+
+    <!-- TIPOGRAFÍAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS GLOBAL + ESPECÍFICO -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/ayudaestilos.css">
+    <link rel="stylesheet" href="CSS/ayudas-style.css">
 </head>
 <body>
 
-<header class="header-red">
-    <div class="container">
-        <div class="search-social">
-            <input type="text" placeholder="Buscar...">
-            <div class="social-media">
+    <!-- Barra roja superior -->
+    <header class="header-red">
+        <div class="container">
+            <div class="search-social">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+
+              
+                
+                <div class="social-media">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/afdetegucigalpa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <svg aria-hidden="true" class="icon instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.6 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.8 9-132.2 9s-102.7 2.6-132.2-9c-19.6-7.8-34.7-23-42.6-42.6-11.7-29.5-9-99.8-9-132.2s-2.6-102.7 9-132.2c7.8-19.6 23-34.7 42.6-42.6 29.5-11.7 99.8-9 132.2-9s102.7-2.6 132.2 9c19.6 7.8 34.7 23 42.6 42.6 11.7 29.5 9 99.8 9 132.2s2.7 102.7-9 132.2z"></path>
+                        </svg>
+                    </a>
+                
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/AlianzaFrancesaTegucigalpa/?locale=es_LA" target="_blank"
+                        rel="noopener noreferrer" title="Facebook">
+                        <svg aria-hidden="true" class="icon facebook" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.89 0-40.41 19.12-40.41 38.81V256h68.88l-11 71.69h-57.88V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
+                        </svg>
+                    </a>
+                
+                    <!-- X / Twitter -->
+                    <a href="https://x.com/AFTegucigalpa?lang=es" target="_blank" rel="noopener noreferrer" title="X / Twitter">
+                        <svg aria-hidden="true" class="icon twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L289.4 191.4 391.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+            </header>
 
-<nav class="header-white">
-    <div class="container">
-        <div class="logo">
-            <img src="SRC/logo.jpg" alt="Logo Alianza Francesa">
-        </div>
+    <!-- Barra blanca con logo y navegación -->
+    <nav class="header-white">
+        <div class="container">
+            <div class="logo">
+                <img src="SRC/logo.jpg" alt="Logo Alianza Francesa">
+            </div>
 
-        <div class="menu-icon" id="menu-icon">☰</div>
+            <!-- Menú hamburguesa (móvil) -->
+            <div class="menu-icon" id="menu-icon">☰</div>
 
-        <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="comoayudar.html">Cómo Ayudar</a></li>
-        <li class="submenu">
-            <a href="#">Servicios</a>
-            <ul class="dropdown">
-                <li><a href="becas.html">Becas</a></li>
+            <!-- Menú principal con dropdowns -->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+
+                <li class="dropdown">
+                    <a href="cursos.html">Cursos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="curso-ninos.html">Francés para niños</a></li>
+                        <li><a href="curso-adolescentes.html">Francés para adolescentes</a></li>
+                        <li><a href="curso-adultos.html">Francés para adultos</a></li>
+                        <li><a href="becas.html">Becas</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="cultura.html">Cultura</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="eventosculturales.html">Eventos culturales</a></li>
+                        <li><a href="RevistaCultural.html">Revista Cultural</a></li>
+                        <li><a href="GaleriaFotos.html">Galería de imágenes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="comoayudar.html">Cómo Ayudar</a></li>
+            <li><a href="Contactenos.html">Contáctenos</a></li>
             </ul>
-        </li>
-        <li><a href="eventosculturales.html">Cultura</a></li>
-        <li><a href="#">Contáctenos</a></li>
-        </ul>
-    </div>
-</nav>
+        </div>
+    </nav>
 
-<main>
+    <main>
+        <!-- HERO / BANDA PRINCIPAL (reusa estilo de panel1) -->
+        <section class="panel1">
+            <h3>Cómo Ayudar</h3>
+            <p>
+                Tu apoyo fortalece nuestra misión cultural y educativa.
+            </p>
+        </section>
 
-    <div class="panel1">
-        <h3>Cómo Ayudar</h3>
-        
-    </div>
+        <!-- INTRO EXPLICATIVA (usa estilos tipo voluntariado-intro) -->
+        <section class="voluntariado-intro">
+            <h1>Apoya a la Alianza Francesa de Honduras</h1>
+            <div class="subrayado"></div>
+            <p>
+                Gracias a tu solidaridad, la Alianza Francesa de Honduras puede seguir impulsando 
+                programas culturales, educativos y lingüísticos que benefician a estudiantes, artistas 
+                y a la comunidad en general. Existen diversas formas de colaborar, desde la donación de 
+                recursos hasta la participación activa en proyectos y eventos.
+            </p>
+        </section>
 
-    <!-- INTRO -->
-    <div class="descripcion">
-        <h2 class="descripcion-subt">Apoya a la Alianza Francesa de Honduras</h2>
-        <p>
-            Tu aporte permite fortalecer los programas culturales, educativos y lingüísticos 
-            que ofrecemos a la comunidad. Gracias a tu solidaridad continuamos promoviendo 
-            el idioma francés y el intercambio cultural.
+        <!-- TARJETAS: FORMAS DE APOYAR (reusa estilos de voluntariado-tarjetas / vol-card) -->
+        <section class="voluntariado-tarjetas">
+            <h2>Formas de Apoyar</h2>
+
+            <div class="voluntariado-contenedor">
+
+                <article class="vol-card">
+                    <img src="IMAGENES/RECUROSC/GRILLA4.jpg" alt="Materiales y recursos">
+                    <h3>Materiales y Recursos</h3>
+                    <p>
+                        Apoya con libros, mobiliario, equipo audiovisual o recursos educativos que 
+                        fortalezcan las actividades de enseñanza y cultura.
+                    </p>
+                </article>
+
+                <article class="vol-card">
+                    <img src="IMAGENES/RECUROSC/GRILLA5.jpg" alt="Clases gratuitas">
+                    <h3>Clases Gratuitas</h3>
+                    <p>
+                        Comparte tus conocimientos impartiendo clases gratuitas o tutorías de apoyo 
+                        para estudiantes de francés.
+                    </p>
+                </article>
+
+                <article class="vol-card">
+                    <img src="IMAGENES/RECUROSC/GRILLA6.jpg" alt="Impulsar eventos">
+                    <h3>Impulsar Eventos</h3>
+                    <p>
+                        Colabora en la organización de eventos culturales, festivales, cine-foros, 
+                        conferencias y actividades abiertas al público.
+                    </p>
+                </article>
+
+                <article class="vol-card">
+                    <img src="IMAGENES/RECUROSC/GRILLA7.jpg" alt="Talleres educativos">
+                    <h3>Talleres Educativos</h3>
+                    <p>
+                        Participa como facilitador o apoyo en talleres, clubes de conversación y 
+                        actividades pedagógicas para estudiantes de diferentes niveles.
+                    </p>
+                </article>
+
+                <article class="vol-card">
+                    <img src="IMAGENES/RECUROSC/GRILLA8.jpg" alt="Proyectos comunitarios">
+                    <h3>Proyectos Comunitarios</h3>
+                    <p>
+                        Súmate a proyectos que promueven la inclusión, el acceso a la cultura y el 
+                        desarrollo de comunidades a través del idioma francés.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO VOLUNTARIADO / CÓMO AYUDAR -->
+        <section class="vol-contacto">
+            <div class="vol-contacto-inner">
+                <h2>Contacto para Voluntariado y Apoyo</h2>
+                <p>
+                    Si deseas unirte como voluntario, hacer una donación o recibir más información 
+                    sobre cómo apoyar nuestros programas, puedes escribirnos o llamarnos:
+                </p>
+
+                <p class="correo">información@aftegucigalpa.hn</p>
+                <p class="telefono">+504 9430-9135 / 9430-9128</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-af">
+    <div class="container footer-content">
+
+        <h3 class="footer-title">Contacto</h3>
+
+        <p class="footer-text">
+            Lomas del Guijarro, 100 metros antes del Instituto Sagrado Corazón.
         </p>
+
+        <p class="footer-text">
+            +504 9430-9135 / 9430-9128
+        </p>
+
+        <p class="footer-text">
+            información@aftegucigalpa.hn
+        </p>
+
+        <p class="footer-copy">
+            © 2025 Alianza Francesa de Honduras – Todos los derechos reservados
+        </p>
+
     </div>
-
- 
-    <div class="voluntariado-tarjetas">
-        <h2>Formas de Apoyar</h2>
-
-        <div class="voluntariado-contenedor">
-
-            <div class="vol-card">
-                <img src="RECUROSC/GRILLA4.jpg" alt="Materiales">
-                <h3>Materiales y Recursos</h3>
-                <p>Apoya con libros, mobiliario, equipo audiovisual o recursos educativos.</p>
-            </div>
-
-            <div class="vol-card">
-                <img src="/RECUROSC/GRILLA5.jpg" alt="Clases Gratuitas">
-                <h3>Clases Gratuitas</h3>
-                <p>Participa impartiendo clases gratuitas a otros estudiantes.</p>
-            </div>
-
-            <div class="vol-card">
-                <img src="/RECUROSC/GRILLA6.jpg" alt="Impulsor de Eventos">
-                <h3>Impulsor de Eventos</h3>
-                <p>Apoya en eventos, actividades culturales o proyectos sociales.</p>
-            </div>
-
-            <div class="vol-card">
-                <img src="RECUROSC/GRILLA7.jpg" alt="Talleres Educativos">
-                <h3>Talleres Educativos</h3>
-                <p>Colabora en clases, talleres y actividades educativas para estudiantes de francés.</p>
-            </div>
-
-            <div class="vol-card">
-                <img src="/RECUROSC/GRILLA8.jpg" alt="Proyectos Comunitarios">
-                <h3>Proyectos Comunitarios</h3>
-                <p>Participa en iniciativas que fomentan la cultura y el desarrollo de la comunidad.</p>
-            </div>
-
-        </div>
-    </div>
-    <section class="vol-contacto">
-        <h2>Contacto Voluntariado</h2>
-        <p>Para unirte a nuestro programa de voluntariado o solicitar más información, puedes escribirnos a:</p>
-
-        <p class="correo">información@aftegucigalpa.hn</p>
-        <p class="telefono">+504 9430-9135 / 9430-9128</p>
-    </section>
-
-
-</main>
-
-<footer>
-    <div class="container">
-        <div class="contact">
-            <a href="#">Ubicación</a>
-            <a href="#">Teléfono</a>
-            <a href="#">Email</a>
-        </div>
-    </div>
-    © 2025 Alianza Francesa de Honduras - Todos los derechos reservados
 </footer>
 
-<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* HERO Eventos */
+﻿
 .hero-eventos {
     background: linear-gradient(135deg, #d11212, #a60e0e);
     padding: 90px 25px;
@@ -22,7 +22,6 @@
     line-height: 1.7;
 }
 
-/* Lista de eventos */
 .eventos-lista {
     padding: 60px 20px 80px;
     text-align: center;
@@ -89,7 +88,6 @@
     margin: 0;
 }
 
-/* Animación simple */
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -112,16 +110,11 @@
     animation: fadeUp 0.7s ease-out;
 }
 
-/* ===========================
-   ANIMACIONES – EVENTOS
-=========================== */
-
-/* Hero de eventos */
 .hero-eventos {
     animation: fadeInDown 0.8s ease-out;
 }
 
-/* Cada tarjeta de evento */
 .evento-card {
     animation: fadeUp 0.7s ease-out;
 }
+

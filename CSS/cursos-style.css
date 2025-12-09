@@ -1,6 +1,4 @@
-/* ===========================
-   CURSOS - PÁGINA PRINCIPAL
-=========================== */
+﻿
 
 :root {
     --rojo-af: #d11212;
@@ -9,12 +7,9 @@
     --gris-fondo: #f4f5f8;
 }
 
-/* Fondo suave en toda la parte baja */
 main {
     background-color: var(--gris-fondo);
 }
-
-/* ---------- HERO GENERAL ---------- */
 
 .intro-cursos {
     padding: 80px 8% 70px;
@@ -36,8 +31,6 @@ main {
     font-size: 1.05rem;
     line-height: 1.9;
 }
-
-/* ---------- RESUMEN DE CATEGORÍAS ---------- */
 
 .resumen-categorias {
     max-width: 1200px;
@@ -65,7 +58,6 @@ main {
     gap: 28px;
 }
 
-/* Tarjeta de categoría (Niños, Adolescentes, Adultos) */
 .categoria-card {
     background: #ffffff;
     border-radius: 20px;
@@ -85,13 +77,11 @@ main {
     box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
 }
 
-/* Icono grande arriba (emoji) */
 .categoria-icono {
     font-size: 2rem;
     margin-bottom: 4px;
 }
 
-/* Título de categoría */
 .categoria-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
@@ -99,14 +89,12 @@ main {
     margin: 0;
 }
 
-/* Descripción corta */
 .categoria-card p {
     font-size: 0.97rem;
     color: #555555;
     margin: 5px 0 6px;
 }
 
-/* Lista de ejemplos dentro de cada categoría */
 .categoria-card ul {
     list-style: disc;
     padding-left: 18px;
@@ -119,15 +107,12 @@ main {
     margin-bottom: 2px;
 }
 
-/* Link de acción dentro de la tarjeta */
 .categoria-link {
     margin-top: 6px;
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--rojo-af);
 }
-
-/* ---------- BLOQUE DE CERTIFICACIONES ---------- */
 
 .info-certificaciones {
     padding: 40px 3% 60px;
@@ -153,8 +138,6 @@ main {
     color: #555555;
     line-height: 1.8;
 }
-
-/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 992px) {
     .intro-cursos {
@@ -186,32 +169,24 @@ main {
     }
 }
 
-/* Hero de cursos */
 .intro-cursos {
     animation: fadeInDown 0.8s ease-out;
 }
 
-/* Las tarjetas de cursos suben suave */
 .curso-card {
     animation: fadeUp 0.7s ease-out;
 }
 
-/* ===========================
-   ANIMACIONES – CURSOS (PÁGINA PRINCIPAL)
-=========================== */
-
-/* Hero de cursos */
 .intro-cursos {
     animation: fadeInDown 0.8s ease-out;
 }
 
-/* Tarjetas de categorías o cursos */
 .categoria-card,
 .curso-card {
     animation: fadeUp 0.7s ease-out;
 }
 
-/* Bloque de certificaciones */
 .info-certificaciones {
     animation: fadeIn 0.9s ease-out;
 }
+
