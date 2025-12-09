@@ -1,7 +1,7 @@
-/* === CARRUSEL HERO SIN BORDES === */
+﻿
 
 .carousel-section {
-    width: 100vw !important;     /* ancho real de toda la pantalla */
+    width: 100vw !important;     
     position: relative;
     left: 50%;
     right: 50%;
@@ -11,46 +11,41 @@
     overflow: hidden;
 }
 
-/* HERO bajo la barra fija sin bordes ni sombras */
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 120px);  /* Ocupa pantalla completa ajustando header */
+    height: calc(100vh - 120px); 
     overflow: hidden;
     background: #000;
     border: none !important;
     box-shadow: none !important;
-    margin: 0;             /* <--- sin espacios arriba/abajo/lados */
+    margin: 0;            
     padding: 0;
 }
 
-/* Contenedor de imágenes */
 .carousel-images {
     display: flex;
     height: 100%;
     transition: transform 0.7s ease-in-out;
 }
 
-/* Slide */
 .carousel-item {
     min-width: 100%;
     height: 100%;
     position: relative;
-    border: none !important;   /* evita bordes indeseados */
+    border: none !important;  
 }
 
-/* Imagen sin bordes ni redondeo */
 .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 0 !important;  /* <--- NO REDONDEADO */
+    border-radius: 0 !important;  
     border: none !important;
     display: block;
 }
 
-/* Gradiente inferior */
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -64,7 +59,6 @@
     z-index: 1;
 }
 
-/* Overlay (texto + botón) */
 .carousel-overlay {
     position: absolute;
     inset: 0;
@@ -75,7 +69,6 @@
     padding: 0 40px 40px;
 }
 
-/* Texto */
 .carousel-overlay p {
     margin: 0;
     max-width: 480px;
@@ -87,7 +80,6 @@
     backdrop-filter: blur(4px);
 }
 
-/* Botón */
 .carousel-button {
     padding: 14px 26px;
     font-size: 1.05rem;
@@ -106,7 +98,6 @@
     transform: translateY(-2px);
 }
 
-/* Flechas */
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
@@ -136,7 +127,6 @@
     transform: translateY(-50%) scale(1.08);
 }
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
     .carousel-overlay {
         padding: 0 25px 30px;
@@ -171,35 +161,50 @@
     }
 }
 
-/* === ARTÍCULOS === */
-
 .articles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 25px;
     margin: 30px 20px 60px;
 }
 
 .article-card {
-    border: 1px solid #ddd;
+    background: var(--blanco);
+    border-radius: 14px;
+    box-shadow: var(--sombra-suave);
+    border: 1px solid var(--gris-claro, #ddd);
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
     text-align: center;
-    background-color: white;
-}
-
-.article-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 0.7s ease-out;
 }
 
 .article-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--sombra-hover);
+}
+
+.article-card img {
+    width: 100%;
+    height: 300px;         
+    aspect-ratio: 16/9;    
+    object-fit: cover;      
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.article-card h3 {
+    font-size: 1.3rem;
+    margin: 15px;
+    color: var(--rojo-af);
+    font-family: var(--font-titulos);
+}
+
+.article-card p {
+    margin: 0 15px 15px 15px;
+    color: #555;
+    font-family: var(--font-texto);
 }
 
 @media (max-width: 992px) {
@@ -214,7 +219,20 @@
     .articles { grid-template-columns: 1fr; }
 }
 
-/* TÍTULO debajo del HERO, no tapado */
 .titulo-elegante {
-    margin-top: 50px; /* Ya no necesita 140px porque el carrusel eliminó margin */
+    margin-top: 50px; 
 }
+
+.carousel-section,
+.carousel {
+    animation: fadeInDown 0.9s ease-out;
+}
+
+.titulo-elegante {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.article-card {
+    animation: fadeUp 0.7s ease-out;
+}
+

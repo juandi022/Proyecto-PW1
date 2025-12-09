@@ -7,34 +7,46 @@
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="https://aftegucigalpa.hn/wp-content/uploads/2025/06/cropped-AF-Logo-01-180x180.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/Galery-style.css">
 </head>
 <body>
+    <!-- Barra roja superior -->
     <header class="header-red">
         <div class="container">
             <div class="search-social">
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Buscar...">
-        <div class="search-results" id="search-results"></div>
-    </div>
-
-    <div class="social-media">
-                    <svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="fill: white; width: 30px; height: 30px;">
-                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                    </svg>
-
-                    <svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook-square" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="fill: white; width: 30px; height: 30px;">
-                        <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
-                    </svg>
-
-                    <svg aria-hidden="true" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="fill: white; width: 30px; height: 30px;">
-                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
-                    </svg>
+                <div class="search-social">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <div class="search-results" id="search-results"></div>
+                </div>
+                
+                <div class="social-media">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/afdetegucigalpa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <svg aria-hidden="true" class="icon instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.6 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.8 9-132.2 9s-102.7 2.6-132.2-9c-19.6-7.8-34.7-23-42.6-42.6-11.7-29.5-9-99.8-9-132.2s-2.6-102.7 9-132.2c7.8-19.6 23-34.7 42.6-42.6 29.5-11.7 99.8-9 132.2-9s102.7-2.6 132.2 9c19.6 7.8 34.7 23 42.6 42.6 11.7 29.5 9 99.8 9 132.2s2.7 102.7-9 132.2z"></path>
+                        </svg>
+                    </a>
+                
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/AlianzaFrancesaTegucigalpa/?locale=es_LA" target="_blank"
+                        rel="noopener noreferrer" title="Facebook">
+                        <svg aria-hidden="true" class="icon facebook" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.89 0-40.41 19.12-40.41 38.81V256h68.88l-11 71.69h-57.88V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
+                        </svg>
+                    </a>
+                
+                    <!-- X / Twitter -->
+                    <a href="https://x.com/AFTegucigalpa?lang=es" target="_blank" rel="noopener noreferrer" title="X / Twitter">
+                        <svg aria-hidden="true" class="icon twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L289.4 191.4 391.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
     </header>
 
     <nav class="header-white">
@@ -48,34 +60,34 @@
 
             <!-- Menú principal con dropdowns -->
             <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
 
-                <li><a href="#">Nosotros</a></li>
+            <li class="dropdown">
+                <a href="cursos.html" class="active">Cursos</a>
+                <ul class="dropdown-menu">
+                    <li><a href="curso-ninos.html" class="active">Francés para niños</a></li>
+                    <li><a href="curso-adolescentes.html">Francés para adolescentes</a></li>
+                    <li><a href="curso-adultos.html">Francés para adultos</a></li>
+                    <li><a href="becas.html">Becas</a></li>
+                </ul>
+            </li>
 
-                <li class="dropdown">
-                    <a href="#">Cursos</a>
+            <li class="dropdown">
+                    <a href="cultura.html" class="active">Cultura</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Francés para niños</a></li>
-                        <li><a href="#">Francés para adolescentes</a></li>
-                        <li><a href="#">Francés para adultos</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#">Cultura</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Eventos culturales</a></li>
+                        <li><a href="eventosculturales.html">Eventos culturales</a></li>
                         <li><a href="RevistaCultural.html">Revista Cultural</a></li>
                         <li><a href="GaleriaFotos.html">Galería de imágenes</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#">Servicios</a></li>
+            <li><a href="comoayudar.html">Como Ayudar</a></li>    
 
-                <li><a href="#">Contáctenos</a></li>
-            </ul>
-        </div>
-    </nav>
+            <li><a href="Contactenos.html">Contáctenos</a></li>
+        </ul>
+    </div>
+</nav>
 
     <main>
     <h2 class="titulo-elegante">Galería de Imágenes</h2>
@@ -87,122 +99,99 @@
         <div class="gallery-grid">
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria1/500/350" alt="Evento cultural 1">
-        <figcaption>Noche de cine francés al aire libre.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria2/500/350" alt="Evento cultural 2">
-        <figcaption>Exposición de arte contemporáneo.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria3/500/350" alt="Evento cultural 3">
-        <figcaption>Presentación musical en vivo.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria4/500/350" alt="Evento cultural 4">
+        <img src="IMAGENES/RECURSOSM/GRILLA1.jpeg" alt="Evento cultural 1">
         <figcaption>Taller creativo para estudiantes.</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria5/500/350" alt="Evento cultural 5">
+        <img src="IMAGENES/RECURSOSM/GRILLA2.jpg" alt="Evento cultural 2">
+        <figcaption>Espacios de convivencia cultural.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="IMAGENES/RECURSOSM/GRILLA3.jpg" alt="Evento cultural 3">
+        <figcaption>Exposición de arte contemporáneo.</figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="IMAGENES/RECURSOSM/GRILLA4.png" alt="Evento cultural 4">
+        <figcaption>Noche de cine francés </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="IMAGENES/RECURSOSM/GRILLA5.jpg" alt="Evento cultural 5">
         <figcaption>Encuentro de literatura y poesía.</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria6/500/350" alt="Evento cultural 6">
+        <img src="IMAGENES/RECURSOSM/GRILLA6.jpg" alt="Evento cultural 6">
         <figcaption>Degustación de gastronomía francesa.</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria7/500/350" alt="Evento cultural 7">
+        <img src="IMAGENES/RECURSOSM/GRILLA7.jpg" alt="Evento cultural 7">
+        <figcaption>Exposición fotográfica </figcaption>
+    </figure>
+
+    <figure class="gallery-item">
+        <img src="IMAGENES/RECURSOSM/GRILLA8.jpg" alt="Evento cultural 8">
+        <figcaption>Festial de música y danza.</figcaption>
+    </figure>
+
+
+
+    <figure class="gallery-item">
+        <img src="IMAGENES/RECURSOSM/GRILLA9.jpg" alt="Evento cultural 9">
         <figcaption>Clases de francés en grupo.</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria8/500/350" alt="Evento cultural 8">
-        <figcaption>Espacios de convivencia cultural.</figcaption>
-    </figure>
-
-    <!-- NUEVAS IMÁGENES A PARTIR DE AQUÍ -->
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria9/500/350" alt="Evento cultural 9">
-        <figcaption>Exposición fotográfica de artistas locales.</figcaption>
+        <img src="IMAGENES/RECURSOSM/GRILLA10.jpg" alt="Evento cultural 10">
+        <figcaption>Exposición teatral</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria10/500/350" alt="Evento cultural 10">
+        <img src="IMAGENES/RECURSOSM/GRILLA11.jpg" alt="Evento cultural 11">
         <figcaption>Clase magistral de pintura al óleo.</figcaption>
     </figure>
 
     <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria11/500/350" alt="Evento cultural 11">
-        <figcaption>Demostración de danza contemporánea.</figcaption>
+        <img src="IMAGENES/RECURSOSM/GRILLA12.jpg" alt="Evento cultural 12">
+        <figcaption>Encuentro de danza y cultura.</figcaption>
     </figure>
 
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria12/500/350" alt="Evento cultural 12">
-        <figcaption>Café literario y tertulia abierta.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria13/500/350" alt="Evento cultural 13">
-        <figcaption>Presentación de cortometrajes franceses.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria14/500/350" alt="Evento cultural 14">
-        <figcaption>Feria cultural y gastronomía internacional.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria15/500/350" alt="Evento cultural 15">
-        <figcaption>Encuentro de fotógrafos emergentes.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria16/500/350" alt="Evento cultural 16">
-        <figcaption>Recital de piano con talentos jóvenes.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria17/500/350" alt="Evento cultural 17">
-        <figcaption>Clase abierta de escultura y modelado.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria18/500/350" alt="Evento cultural 18">
-        <figcaption>Visita guiada a exposición histórica.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria19/500/350" alt="Evento cultural 19">
-        <figcaption>Concierto acústico en la terraza cultural.</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-        <img src="https://picsum.photos/seed/galeria20/500/350" alt="Evento cultural 20">
-        <figcaption>Ensayo abierto de teatro contemporáneo.</figcaption>
-    </figure>
+   
+   
 
 </div>
     </section>
 </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="contact">
-                <a href="#">Ubicación</a>
-                <a href="#">Teléfono</a>
-                <a href="#">Email</a>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer-af">
+    <div class="container footer-content">
 
-    <script src="JS/script.js"></script>
+        <h3 class="footer-title">Contacto</h3>
+
+        <p class="footer-text">
+            Lomas del Guijarro, 100 metros antes del Instituto Sagrado Corazón.
+        </p>
+
+        <p class="footer-text">
+            +504 9430-9135 / 9430-9128
+        </p>
+
+        <p class="footer-text">
+            información@aftegucigalpa.hn
+        </p>
+
+        <p class="footer-copy">
+            © 2025 Alianza Francesa de Honduras – Todos los derechos reservados
+        </p>
+
+    </div>
+</footer>
+
+<script src="JS/script.js"></script>
 </body>
 </html>
