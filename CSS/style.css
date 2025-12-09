@@ -29,6 +29,9 @@ main {
 
 body {
     padding-top: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-style: italic;
+    
 }
 
 /*Contenido*/
@@ -396,7 +399,8 @@ h1{
 
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .carousel-item p {
@@ -491,7 +495,9 @@ h1{
 
 .noticia-card img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+    
 }
 
 .noticia-card h3 {
