@@ -1,0 +1,217 @@
+/* ===========================
+   CURSOS - PÁGINA PRINCIPAL
+=========================== */
+
+:root {
+    --rojo-af: #d11212;
+    --rojo-af-oscuro: #a60e0e;
+    --azul-af: #003366;
+    --gris-fondo: #f4f5f8;
+}
+
+/* Fondo suave en toda la parte baja */
+main {
+    background-color: var(--gris-fondo);
+}
+
+/* ---------- HERO GENERAL ---------- */
+
+.intro-cursos {
+    padding: 80px 8% 70px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--rojo-af) 0%, var(--rojo-af-oscuro) 100%);
+    color: #ffffff;
+}
+
+.intro-cursos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    letter-spacing: 0.6px;
+}
+
+.intro-cursos p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* ---------- RESUMEN DE CATEGORÍAS ---------- */
+
+.resumen-categorias {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 3% 70px;
+    text-align: center;
+}
+
+.resumen-categorias h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    color: var(--rojo-af);
+    margin-bottom: 8px;
+}
+
+.resumen-subtitulo {
+    font-size: 0.98rem;
+    color: #777777;
+    margin-bottom: 35px;
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Tarjeta de categoría (Niños, Adolescentes, Adultos) */
+.categoria-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 22px 26px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, box-shadow 0.25s ease;
+}
+
+.categoria-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* Icono grande arriba (emoji) */
+.categoria-icono {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+/* Título de categoría */
+.categoria-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--azul-af);
+    margin: 0;
+}
+
+/* Descripción corta */
+.categoria-card p {
+    font-size: 0.97rem;
+    color: #555555;
+    margin: 5px 0 6px;
+}
+
+/* Lista de ejemplos dentro de cada categoría */
+.categoria-card ul {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 4px 0 8px;
+    font-size: 0.92rem;
+    color: #555555;
+}
+
+.categoria-card li {
+    margin-bottom: 2px;
+}
+
+/* Link de acción dentro de la tarjeta */
+.categoria-link {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--rojo-af);
+}
+
+/* ---------- BLOQUE DE CERTIFICACIONES ---------- */
+
+.info-certificaciones {
+    padding: 40px 3% 60px;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.info-certificaciones .info-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-certificaciones h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    color: var(--azul-af);
+    margin-bottom: 10px;
+}
+
+.info-certificaciones p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 992px) {
+    .intro-cursos {
+        padding: 70px 6% 60px;
+    }
+
+    .categoria-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-cursos h1 {
+        font-size: 2.4rem;
+    }
+
+    .categoria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-cursos {
+        padding: 60px 5% 45px;
+    }
+
+    .resumen-categorias {
+        padding: 45px 5% 55px;
+    }
+}
+
+/* Hero de cursos */
+.intro-cursos {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Las tarjetas de cursos suben suave */
+.curso-card {
+    animation: fadeUp 0.7s ease-out;
+}
+
+/* ===========================
+   ANIMACIONES – CURSOS (PÁGINA PRINCIPAL)
+=========================== */
+
+/* Hero de cursos */
+.intro-cursos {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Tarjetas de categorías o cursos */
+.categoria-card,
+.curso-card {
+    animation: fadeUp 0.7s ease-out;
+}
+
+/* Bloque de certificaciones */
+.info-certificaciones {
+    animation: fadeIn 0.9s ease-out;
+}

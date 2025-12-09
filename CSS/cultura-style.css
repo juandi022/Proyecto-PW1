@@ -1,0 +1,108 @@
+/* HERO Cultura */
+.hero-cultura {
+    background: linear-gradient(135deg, #d11212, #a60e0e);
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-cultura h1 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
+}
+
+.hero-cultura p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Sección categorías cultura */
+.cultura-categorias {
+    padding: 60px 20px 80px;
+    text-align: center;
+}
+
+.cultura-categorias h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.cultura-intro {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    font-family: "Inter", sans-serif;
+    color: #555;
+    font-size: 0.98rem;
+}
+
+/* Grid de tarjetas */
+.cultura-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.cultura-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cultura-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 45px rgba(0,0,0,0.2);
+}
+
+.cultura-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cultura-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    margin: 15px;
+    color: #003366;
+}
+
+.cultura-card p {
+    margin: 0 15px 18px;
+    color: #555;
+    font-family: "Inter", sans-serif;
+}
+
+/* Animación reutilizable */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .hero-cultura {
+        padding: 70px 16px;
+    }
+    .hero-cultura h1 {
+        font-size: 2.4rem;
+    }
+}
+
+.hero-cultura {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.cultura-card {
+    animation: fadeUp 0.7s ease-out;
+}

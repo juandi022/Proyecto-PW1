@@ -1,0 +1,127 @@
+/* HERO Eventos */
+.hero-eventos {
+    background: linear-gradient(135deg, #d11212, #a60e0e);
+    padding: 90px 25px;
+    text-align: center;
+    color: white;
+    animation: fadeInDown 0.9s ease-out;
+}
+
+.hero-eventos h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.hero-eventos p {
+    font-family: "Inter", sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* Lista de eventos */
+.eventos-lista {
+    padding: 60px 20px 80px;
+    text-align: center;
+}
+
+.eventos-lista h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.3rem;
+    color: crimson;
+    margin-bottom: 35px;
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.evento-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evento-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+}
+
+.evento-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.evento-info {
+    padding: 18px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+}
+
+.evento-info .fecha {
+    display: inline-block;
+    background: crimson;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.evento-info h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    margin: 8px 0;
+    color: #003366;
+}
+
+.evento-info p {
+    color: #555;
+    margin: 0;
+}
+
+/* Animación simple */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .hero-eventos {
+        padding: 70px 16px;
+    }
+    .hero-eventos h1 {
+        font-size: 2.4rem;
+    }
+}
+
+.hero-eventos {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.evento-card {
+    animation: fadeUp 0.7s ease-out;
+}
+
+/* ===========================
+   ANIMACIONES – EVENTOS
+=========================== */
+
+/* Hero de eventos */
+.hero-eventos {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Cada tarjeta de evento */
+.evento-card {
+    animation: fadeUp 0.7s ease-out;
+}
