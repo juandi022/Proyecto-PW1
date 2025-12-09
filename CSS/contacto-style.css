@@ -1,0 +1,275 @@
+﻿
+
+:root {
+    --rojo-af: #d11212;
+    --rojo-af-oscuro: #a10e0e;
+    --azul-af: #003366;
+    --gris-texto: #444444;
+    --gris-suave: #f4f5f8;
+    --blanco: #ffffff;
+
+    --sombra-suave: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 14px 40px rgba(0, 0, 0, 0.18);
+
+    --font-titulos: "Playfair Display", "Georgia", serif;
+    --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.contacto-hero {
+    padding: 90px 24px 70px;
+    text-align: center;
+    color: var(--blanco);
+    background: radial-gradient(circle at top left, #ff4a4a, var(--rojo-af-oscuro));
+    font-family: var(--font-titulos);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.contacto-hero h1 {
+    margin: 0 0 10px;
+    font-size: 2.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.contacto-hero p {
+    margin: 0;
+    font-family: var(--font-texto);
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+.contacto-intro {
+    max-width: 900px;
+    margin: 40px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+    font-family: var(--font-texto);
+    animation: fadeIn 0.9s ease-out;
+}
+
+.contacto-intro p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: var(--gris-texto);
+    line-height: 1.7;
+}
+
+.contacto-layout {
+    max-width: 1120px;
+    margin: 40px auto 60px;
+    padding: 0 20px 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 28px;
+    font-family: var(--font-texto);
+    animation: fadeIn 1s ease-out;
+}
+
+.contacto-card {
+    background: var(--blanco);
+    border-radius: 18px;
+    box-shadow: var(--sombra-suave);
+    padding: 26px 24px 28px;
+}
+
+.contacto-form-card h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.9rem;
+    color: var(--rojo-af);
+    margin: 0 0 16px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gris-texto);
+}
+
+.campo input,
+.campo textarea {
+    font-family: var(--font-texto);
+    font-size: 0.98rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: var(--rojo-af);
+    box-shadow: 0 0 0 2px rgba(209, 18, 18, 0.15);
+    background-color: #fff9f9;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    margin-top: 6px;
+    align-self: flex-start;
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: var(--rojo-af);
+    color: var(--blanco);
+    font-family: var(--font-texto);
+    font-weight: 600;
+    font-size: 0.98rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background: var(--rojo-af-oscuro);
+    transform: translateY(-1px);
+    box-shadow: var(--sombra-hover);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.contacto-info-card h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.8rem;
+    color: var(--rojo-af);
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.contacto-info-card p {
+    margin: 8px 0 10px;
+    font-size: 0.98rem;
+    color: var(--gris-texto);
+    line-height: 1.6;
+}
+
+.contacto-info-card a {
+    color: var(--azul-af);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacto-info-card a:hover {
+    text-decoration: underline;
+}
+
+.contacto-info-card .detalle {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.horarios {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.horarios h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.1rem;
+    margin: 0 0 6px;
+    color: var(--azul-af);
+}
+
+.horarios ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.horarios li {
+    margin-bottom: 4px;
+}
+
+.horarios .cerrado {
+    color: var(--rojo-af);
+    font-weight: 700;
+}
+
+.mensaje-final {
+    margin-top: 16px;
+    font-size: 0.97rem;
+    color: var(--gris-texto);
+    font-style: italic;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .contacto-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-info-card {
+        order: -1; 
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-hero {
+        padding: 70px 16px 56px;
+    }
+
+    .contacto-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contacto-intro {
+        margin-top: 28px;
+    }
+}
+
