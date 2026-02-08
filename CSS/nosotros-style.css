@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 /* ============================
    VARIABLES BÁSICAS
 ============================ */
+=======
+﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 :root {
     --rojo-af: #d11212;
     --rojo-af-oscuro: #a70e0e;
@@ -9,6 +13,7 @@
     --fondo-claro: #ffffff;
 }
 
+<<<<<<< HEAD
 /* ============================
    AJUSTES GENERALES SOLO PARA ESTA PÁGINA
 ============================ */
@@ -19,6 +24,12 @@ main {
 }
 
 /* Títulos elegantes reutilizados */
+=======
+main {
+    margin-top: 120px; 
+}
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .titulo-elegante {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 2.3em;
@@ -29,6 +40,7 @@ main {
     margin: 40px 0 20px;
 }
 
+<<<<<<< HEAD
 /* ============================
    HERO / SOBRE LA ALIANZA
    (sección con imagen de fondo)
@@ -39,6 +51,13 @@ main {
     width: 100vw;                /* ocupar todo el ancho de la ventana */
     left: 50%;
     margin-left: -50vw;          /* truco para quitar cualquier borde blanco lateral */
+=======
+.sobre-af {
+    position: relative;
+    width: 100vw;                
+    left: 50%;
+    margin-left: -50vw;          
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     margin-right: -50vw;
     overflow: hidden;
 
@@ -47,16 +66,26 @@ background-image: url("../SRC/FONDO.png");
     background-position: center;
     background-repeat: no-repeat;
 
+<<<<<<< HEAD
     padding: 80px 0 110px;       /* alto del hero */
     color: #ffffff;
 }
 
 /* El div .sobre-af-image no lo usamos; se deja sin estilo para que no moleste */
+=======
+    padding: 80px 0 110px;       
+    color: #ffffff;
+}
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-image {
     display: none;
 }
 
+<<<<<<< HEAD
 /* Capa oscura sobre la foto */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-overlay {
     position: absolute;
     inset: 0;
@@ -64,7 +93,10 @@ background-image: url("../SRC/FONDO.png");
     z-index: 1;
 }
 
+<<<<<<< HEAD
 /* Contenido encima de la imagen y overlay */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-content {
     position: relative;
     z-index: 2;
@@ -73,7 +105,10 @@ background-image: url("../SRC/FONDO.png");
     padding: 0 24px;
 }
 
+<<<<<<< HEAD
 /* Título elegante dentro del hero en blanco y alineado a la izquierda */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-content .titulo-elegante {
     color: #ffffff;
     text-align: left;
@@ -81,7 +116,10 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Intro e historia dentro del hero */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-content .intro,
 .sobre-af-content p {
     font-size: 1.08rem;
@@ -96,12 +134,18 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 8px;
 }
 
+<<<<<<< HEAD
 /* Subtítulo “Nuestra Misión y Valores” dentro del hero */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af-content h2.titulo-elegante:nth-of-type(2) {
     margin-top: 30px;
 }
 
+<<<<<<< HEAD
 /* Grid de Misión / Valores sobre la imagen */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nosotros-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -145,7 +189,10 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 6px;
 }
 
+<<<<<<< HEAD
 /* Hover elegante en las tarjetas Misión / Valores */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nosotros-card::before {
     content: "";
     position: absolute;
@@ -165,10 +212,13 @@ background-image: url("../SRC/FONDO.png");
     opacity: 1;
 }
 
+<<<<<<< HEAD
 /* ============================
    CTA INSCRIPCIÓN
 ============================ */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .cta-inscripcion {
     background-color: var(--azul-af);
     padding: 60px 20px;
@@ -208,11 +258,14 @@ background-image: url("../SRC/FONDO.png");
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
 }
 
+<<<<<<< HEAD
 /* ============================
    BLOQUES INFERIORES (COMITÉ,
    DOCENTES, MANTENIMIENTO, INSTITUCIONES)
 ============================ */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nosotros-bloque {
     max-width: 1100px;
     margin: 50px auto;
@@ -231,7 +284,10 @@ background-image: url("../SRC/FONDO.png");
     margin-top: 8px;
 }
 
+<<<<<<< HEAD
 /* Grid general para tarjetas (comité, docentes, etc.) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -239,7 +295,10 @@ background-image: url("../SRC/FONDO.png");
     margin-top: 30px;
 }
 
+<<<<<<< HEAD
 /* Tarjeta base */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .team-card {
     position: relative;
     background: var(--fondo-claro);
@@ -256,7 +315,10 @@ background-image: url("../SRC/FONDO.png");
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
+<<<<<<< HEAD
 /* Imagen redonda para personas */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .team-img {
     width: 110px;
     height: 110px;
@@ -265,7 +327,10 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Imagen para instituciones */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .institucion-img {
     width: 170px;
     max-width: 100%;
@@ -273,7 +338,10 @@ background-image: url("../SRC/FONDO.png");
     margin-bottom: 12px;
 }
 
+<<<<<<< HEAD
 /* Texto de tarjetas */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .team-card h3 {
     font-size: 1.1rem;
     color: var(--azul-af);
@@ -294,10 +362,13 @@ background-image: url("../SRC/FONDO.png");
     word-break: break-word;
 }
 
+<<<<<<< HEAD
 /* ============================
    RESPONSIVE
 ============================ */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 992px) {
     .sobre-af {
         background-attachment: scroll;
@@ -342,21 +413,30 @@ background-image: url("../SRC/FONDO.png");
     animation: fadeIn 0.9s ease-out;
 }
 
+<<<<<<< HEAD
 /* ===========================
    ANIMACIONES – NOSOTROS
 =========================== */
 
 /* Hero con la imagen de fondo */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .sobre-af {
     animation: fadeInDown 0.9s ease-out;
 }
 
+<<<<<<< HEAD
 /* Tarjetas de Misión / Valores */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nosotros-card {
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
 /* Bloques inferiores (comité, docentes, instituciones) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nosotros-bloque {
     animation: fadeIn 0.9s ease-out;
 }
@@ -364,3 +444,7 @@ background-image: url("../SRC/FONDO.png");
 .team-card {
     animation: fadeUp 0.7s ease-out;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

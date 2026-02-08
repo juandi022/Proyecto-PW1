@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* HERO Eventos */
+=======
+﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .hero-eventos {
     background: linear-gradient(135deg, #d11212, #a60e0e);
     padding: 90px 25px;
@@ -22,7 +26,10 @@
     line-height: 1.7;
 }
 
+<<<<<<< HEAD
 /* Lista de eventos */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .eventos-lista {
     padding: 60px 20px 80px;
     text-align: center;
@@ -89,7 +96,10 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
 /* Animación simple */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -112,16 +122,26 @@
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
 /* ===========================
    ANIMACIONES – EVENTOS
 =========================== */
 
 /* Hero de eventos */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .hero-eventos {
     animation: fadeInDown 0.8s ease-out;
 }
 
+<<<<<<< HEAD
 /* Cada tarjeta de evento */
 .evento-card {
     animation: fadeUp 0.7s ease-out;
 }
+=======
+.evento-card {
+    animation: fadeUp 0.7s ease-out;
+}
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

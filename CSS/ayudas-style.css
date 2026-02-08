@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 /* ==================================================
    CÓMO AYUDAR – ESTILOS ESPECÍFICOS
    (usa el mismo lenguaje visual que index/becas/voluntariado)
 ================================================== */
+=======
+﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 
 :root {
     --rojo-af: #d11212;
@@ -18,11 +22,14 @@
     --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+<<<<<<< HEAD
 /* =============================
    PANEL SUPERIOR (CÓMO AYUDAR)
    Reutiliza la idea de panel1 / hero
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .panel1 {
     background: radial-gradient(circle at top left, #ff4a4a, var(--rojo-af-oscuro));
     color: var(--blanco);
@@ -47,10 +54,13 @@
     opacity: 0.95;
 }
 
+<<<<<<< HEAD
 /* =============================
    INTRO - DESCRIPCIÓN CENTRAL
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .voluntariado-intro {
     width: 100%;
     padding: 60px 7%;
@@ -83,10 +93,13 @@
     color: var(--gris-texto);
 }
 
+<<<<<<< HEAD
 /* =============================
    FORMAS DE APOYAR – TARJETAS
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .voluntariado-tarjetas {
     width: 100%;
     padding: 60px 6% 70px;
@@ -112,7 +125,10 @@
     gap: 28px;
 }
 
+<<<<<<< HEAD
 /* Tarjeta individual */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .vol-card {
     width: 300px;
     background: var(--blanco);
@@ -134,6 +150,7 @@
     background-color: #fff9f9;
 }
 
+<<<<<<< HEAD
 /* Imagen de tarjeta */
 .vol-card img {
     width: 100%;
@@ -143,6 +160,15 @@
 }
 
 /* Título de tarjeta */
+=======
+.vol-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   
+    display: block;
+}
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .vol-card h3 {
     color: var(--rojo-af);
     font-size: 1.4rem;
@@ -150,7 +176,10 @@
     margin: 16px 16px 8px;
 }
 
+<<<<<<< HEAD
 /* Texto de tarjeta */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .vol-card p {
     padding: 0 20px 10px;
     line-height: 1.6;
@@ -158,10 +187,13 @@
     color: var(--gris-texto);
 }
 
+<<<<<<< HEAD
 /* =============================
    CONTACTO – VOLUNTARIADO / AYUDAS
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .vol-contacto {
     width: 100%;
     padding: 60px 6% 70px;
@@ -194,7 +226,10 @@
     color: var(--gris-texto);
 }
 
+<<<<<<< HEAD
 /* Datos de contacto */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .correo,
 .telefono {
     font-size: 1.05rem;
@@ -214,10 +249,13 @@
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* =============================
    ANIMACIONES
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -245,7 +283,10 @@
     }
 }
 
+<<<<<<< HEAD
 /* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -254,10 +295,13 @@
     }
 }
 
+<<<<<<< HEAD
 /* =============================
    RESPONSIVE
 ============================= */
 
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 768px) {
     .panel1 {
         padding: 70px 16px 60px;
@@ -287,3 +331,7 @@
         padding: 24px 16px;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
