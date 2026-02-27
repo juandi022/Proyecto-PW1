@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+/* ===========================
+   VARIABLES (por si no hereda de index-style)
+=========================== */
+=======
 ﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 :root {
     --rojo-af: #d11212;
     --rojo-af-oscuro: #a10e0e;
@@ -14,6 +20,13 @@
     --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   HERO DEL FORMULARIO
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .form-hero {
     text-align: center;
     padding: 90px 20px;
@@ -38,6 +51,13 @@
     line-height: 1.6;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   CONTENEDOR DEL FORMULARIO
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .formulario-container {
     max-width: 750px;
     margin: 40px auto 80px;
@@ -53,6 +73,10 @@
     font-family: var(--font-texto);
 }
 
+<<<<<<< HEAD
+/* CAMPOS */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .campo {
     margin-bottom: 18px;
     display: flex;
@@ -84,6 +108,10 @@
     min-height: 120px;
 }
 
+<<<<<<< HEAD
+/* FOCUS ESTADO */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
@@ -93,6 +121,13 @@
     transform: translateY(-1px);
 }
 
+<<<<<<< HEAD
+/* ===========================
+   BOTÓN ENVIAR
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .btn-enviar {
     width: 100%;
     padding: 14px;
@@ -121,6 +156,13 @@
     box-shadow: 0 4px 14px rgba(0,0,0,0.16);
 }
 
+<<<<<<< HEAD
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 768px) {
     .form-hero {
         padding: 70px 18px;
@@ -136,6 +178,10 @@
     }
 }
 
+<<<<<<< HEAD
+/* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -144,6 +190,13 @@
     }
 }
 
+<<<<<<< HEAD
+/* ===========================
+   ERRORES DE VALIDACIÓN
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .campo.campo-error input,
 .campo.campo-error select,
 .campo.campo-error textarea {
@@ -158,6 +211,13 @@
     min-height: 14px;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   OVERLAY ÉXITO
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .success-overlay {
     position: fixed;
     inset: 0;
@@ -202,6 +262,10 @@
     color: var(--gris-texto);
 }
 
+<<<<<<< HEAD
+/* ICONO CHECK */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .success-icon {
     width: 80px;
     height: 80px;
@@ -231,6 +295,10 @@
     }
 }
 
+<<<<<<< HEAD
+/* Botón cerrar */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .btn-cerrar-success {
     padding: 10px 24px;
     border-radius: 999px;
@@ -248,4 +316,8 @@
     background: var(--rojo-af-oscuro);
     transform: translateY(-1px);
     box-shadow: var(--sombra-suave);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

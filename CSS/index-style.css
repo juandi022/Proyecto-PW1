@@ -1,5 +1,15 @@
+<<<<<<< HEAD
+
+
+
+
+/* ===========================
+   VARIABLES BÁSICAS
+=========================== */
+=======
 ﻿
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 :root {
     --rojo-af: #d11212;
     --rojo-af-oscuro: #a10e0e;
@@ -15,6 +25,10 @@
     --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+<<<<<<< HEAD
+/* Tipografía global: cuerpo y headings */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 body {
     font-family: var(--font-texto);
     font-size: 16px;
@@ -27,6 +41,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.6rem;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   SECCIÓN BIENVENIDA (HERO)
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .bienvenida {
     padding: 90px 20px;
     text-align: center;
@@ -46,6 +67,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   CONTADORES – ÍCONOS UNIFORMES
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contadores {
     display: flex;
     justify-content: center;
@@ -64,8 +92,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+<<<<<<< HEAD
+/* Cada tarjeta: misma estructura y altura */
+.contador-item {
+    flex: 1 1 240px;                  /* mismo ancho flexible */
+=======
 .contador-item {
     flex: 1 1 240px;                  
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     max-width: 260px;
     display: flex;
     flex-direction: column;
@@ -74,6 +108,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-texto);
 }
 
+<<<<<<< HEAD
+/* ICONO dentro de una “tarjeta” blanca */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contador-item img {
     width: 120px;
     height: 120px;
@@ -91,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
         filter 0.3s ease;
 }
 
+<<<<<<< HEAD
+/* Hover elegante */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contador-item:hover img {
     transform: translateY(-4px) scale(1.04);
     box-shadow: var(--sombra-hover);
@@ -98,6 +140,10 @@ h1, h2, h3, h4, h5, h6 {
     filter: saturate(1.05);
 }
 
+<<<<<<< HEAD
+/* NÚMERO (compatible con animación JS) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contador-item span {
     font-size: 2.1rem;
     color: var(--rojo-af);
@@ -113,11 +159,19 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+<<<<<<< HEAD
+/* Clase que se añade desde JS cuando empiezan a contar */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contador-item span.activo {
     opacity: 1;
     transform: translateY(0);
 }
 
+<<<<<<< HEAD
+/* DESCRIPCIÓN */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contador-item p {
     margin-top: 4px;
     font-size: 0.95rem;
@@ -125,6 +179,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
+<<<<<<< HEAD
+
+/* ===========================
+   PANEL 1
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .panel1 {
     background: var(--rojo-af);
     color: var(--blanco);
@@ -140,6 +202,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   CARRUSEL
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel {
     position: relative;
     width: 100%;
@@ -179,6 +248,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-texto);
 }
 
+<<<<<<< HEAD
+/* Botones del carrusel */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
@@ -217,6 +290,13 @@ h1, h2, h3, h4, h5, h6 {
     right: 10px;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   TÍTULO ELEGANTE
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .titulo-elegante {
     font-family: var(--font-titulos);
     font-size: 2.3em;
@@ -227,6 +307,13 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   NOTICIAS
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .noticias {
     padding: 40px 20px;
     margin-top: 40px;
@@ -303,6 +390,13 @@ h1, h2, h3, h4, h5, h6 {
     color: cornflowerblue;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   ANIMACIONES KEYFRAMES
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -330,6 +424,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+<<<<<<< HEAD
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 768px) {
     .bienvenida {
         font-size: 2.1rem;
@@ -354,7 +455,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 30px 16px;
     }
 
+<<<<<<< HEAD
+    /* Ajustes responsive para imágenes grandes */
+=======
     
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     .carousel-item img,
     .noticia-card img {
         height: 220px;
@@ -363,6 +468,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+<<<<<<< HEAD
+/* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -370,4 +479,7 @@ h1, h2, h3, h4, h5, h6 {
         transition-duration: 0.01ms !important;
     }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

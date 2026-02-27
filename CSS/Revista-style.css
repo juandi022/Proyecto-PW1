@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+/* === CARRUSEL HERO SIN BORDES === */
+
+.carousel-section {
+    width: 100vw !important;     /* ancho real de toda la pantalla */
+=======
 ﻿
 
 .carousel-section {
     width: 100vw !important;     
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     position: relative;
     left: 50%;
     right: 50%;
@@ -11,41 +18,76 @@
     overflow: hidden;
 }
 
+<<<<<<< HEAD
+/* HERO bajo la barra fija sin bordes ni sombras */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px);  /* Ocupa pantalla completa ajustando header */
+=======
 .carousel {
     position: relative;
     width: 100%;
     height: calc(100vh - 120px); 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     overflow: hidden;
     background: #000;
     border: none !important;
     box-shadow: none !important;
+<<<<<<< HEAD
+    margin: 0;             /* <--- sin espacios arriba/abajo/lados */
+    padding: 0;
+}
+
+/* Contenedor de imágenes */
+=======
     margin: 0;            
     padding: 0;
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-images {
     display: flex;
     height: 100%;
     transition: transform 0.7s ease-in-out;
 }
 
+<<<<<<< HEAD
+/* Slide */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-item {
     min-width: 100%;
     height: 100%;
     position: relative;
+<<<<<<< HEAD
+    border: none !important;   /* evita bordes indeseados */
+}
+
+/* Imagen sin bordes ni redondeo */
+=======
     border: none !important;  
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+<<<<<<< HEAD
+    border-radius: 0 !important;  /* <--- NO REDONDEADO */
+=======
     border-radius: 0 !important;  
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     border: none !important;
     display: block;
 }
 
+<<<<<<< HEAD
+/* Gradiente inferior */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -59,6 +101,10 @@
     z-index: 1;
 }
 
+<<<<<<< HEAD
+/* Overlay (texto + botón) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-overlay {
     position: absolute;
     inset: 0;
@@ -69,6 +115,10 @@
     padding: 0 40px 40px;
 }
 
+<<<<<<< HEAD
+/* Texto */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-overlay p {
     margin: 0;
     max-width: 480px;
@@ -80,6 +130,10 @@
     backdrop-filter: blur(4px);
 }
 
+<<<<<<< HEAD
+/* Botón */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-button {
     padding: 14px 26px;
     font-size: 1.05rem;
@@ -98,6 +152,10 @@
     transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
+/* Flechas */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
@@ -127,6 +185,10 @@
     transform: translateY(-50%) scale(1.08);
 }
 
+<<<<<<< HEAD
+/* RESPONSIVE */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 992px) {
     .carousel-overlay {
         padding: 0 25px 30px;
@@ -161,14 +223,39 @@
     }
 }
 
+<<<<<<< HEAD
+/* === ARTÍCULOS === */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+=======
 .articles {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     margin: 30px 20px 60px;
 }
 
 .article-card {
+<<<<<<< HEAD
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: white;
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+=======
     background: var(--blanco);
     border-radius: 14px;
     box-shadow: var(--sombra-suave);
@@ -177,10 +264,14 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeUp 0.7s ease-out;
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 }
 
 .article-card:hover {
     transform: translateY(-5px);
+<<<<<<< HEAD
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+=======
     box-shadow: var(--sombra-hover);
 }
 
@@ -205,6 +296,7 @@
     margin: 0 15px 15px 15px;
     color: #555;
     font-family: var(--font-texto);
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 }
 
 @media (max-width: 992px) {
@@ -219,20 +311,44 @@
     .articles { grid-template-columns: 1fr; }
 }
 
+<<<<<<< HEAD
+/* TÍTULO debajo del HERO, no tapado */
+.titulo-elegante {
+    margin-top: 50px; /* Ya no necesita 140px porque el carrusel eliminó margin */
+}
+
+/* ===========================
+   ANIMACIONES – REVISTA CULTURAL
+=========================== */
+
+/* Carrusel hero completo */
+=======
 .titulo-elegante {
     margin-top: 50px; 
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .carousel-section,
 .carousel {
     animation: fadeInDown 0.9s ease-out;
 }
 
+<<<<<<< HEAD
+/* Título debajo del hero */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .titulo-elegante {
     animation: fadeIn 0.8s ease-out;
 }
 
+<<<<<<< HEAD
+/* Tarjetas de artículos */
+.article-card {
+    animation: fadeUp 0.7s ease-out;
+}
+=======
 .article-card {
     animation: fadeUp 0.7s ease-out;
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

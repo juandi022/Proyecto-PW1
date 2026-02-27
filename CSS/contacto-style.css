@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+/* ==================================================
+   CONTACTO – ESTILOS ESPECÍFICOS
+================================================== */
+=======
 ﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 
 :root {
     --rojo-af: #d11212;
@@ -15,6 +21,13 @@
     --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+<<<<<<< HEAD
+/* =============================
+   HERO CONTACTO
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-hero {
     padding: 90px 24px 70px;
     text-align: center;
@@ -38,6 +51,13 @@
     opacity: 0.95;
 }
 
+<<<<<<< HEAD
+/* =============================
+   INTRO TEXTUAL
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-intro {
     max-width: 900px;
     margin: 40px auto 20px;
@@ -54,6 +74,13 @@
     line-height: 1.7;
 }
 
+<<<<<<< HEAD
+/* =============================
+   LAYOUT CONTACTO
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-layout {
     max-width: 1120px;
     margin: 40px auto 60px;
@@ -65,6 +92,10 @@
     animation: fadeIn 1s ease-out;
 }
 
+<<<<<<< HEAD
+/* Tarjetas genéricas */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-card {
     background: var(--blanco);
     border-radius: 18px;
@@ -72,6 +103,13 @@
     padding: 26px 24px 28px;
 }
 
+<<<<<<< HEAD
+/* =============================
+   FORMULARIO
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-form-card h2 {
     font-family: var(--font-titulos);
     font-size: 1.9rem;
@@ -121,6 +159,10 @@
     min-height: 120px;
 }
 
+<<<<<<< HEAD
+/* Botón enviar */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .btn-enviar {
     margin-top: 6px;
     align-self: flex-start;
@@ -149,6 +191,13 @@
     box-shadow: none;
 }
 
+<<<<<<< HEAD
+/* =============================
+   INFO DE CONTACTO
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .contacto-info-card h2 {
     font-family: var(--font-titulos);
     font-size: 1.8rem;
@@ -179,6 +228,10 @@
     color: #666;
 }
 
+<<<<<<< HEAD
+/* Horarios */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .horarios {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -207,6 +260,10 @@
     font-weight: 700;
 }
 
+<<<<<<< HEAD
+/* Mensaje final */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .mensaje-final {
     margin-top: 16px;
     font-size: 0.97rem;
@@ -214,6 +271,13 @@
     font-style: italic;
 }
 
+<<<<<<< HEAD
+/* =============================
+   ANIMACIONES
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -241,6 +305,10 @@
     }
 }
 
+<<<<<<< HEAD
+/* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -249,13 +317,24 @@
     }
 }
 
+<<<<<<< HEAD
+/* =============================
+   RESPONSIVE
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 900px) {
     .contacto-layout {
         grid-template-columns: 1fr;
     }
 
     .contacto-info-card {
+<<<<<<< HEAD
+        order: -1; /* info arriba en móvil si quieres cambiarlo, puedes quitar esto */
+=======
         order: -1; 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     }
 }
 
@@ -272,4 +351,7 @@
         margin-top: 28px;
     }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

@@ -1,5 +1,11 @@
+<<<<<<< HEAD
+/* =============== TIPOGRAFÍA GLOBAL =============== */
+
+/* 🔹 Quitar bordes y paddings por defecto y unificar tipografía */
+=======
 ﻿
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 html,
 body {
     margin: 0;
@@ -11,31 +17,66 @@ body {
     background-color: #ffffff;
 }
 
+<<<<<<< HEAD
+/* Títulos principales */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 h1, h2, h3, .titulo-elegante {
     font-family: 'Playfair Display', serif !important;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
+<<<<<<< HEAD
+/* Subtítulos más elegantes */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 h4, h5, h6 {
     font-family: 'Playfair Display', serif !important;
     font-weight: 500;
 }
 
+<<<<<<< HEAD
+/* Menú superior */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nav-links a {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
 
+<<<<<<< HEAD
+/* Botones */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .btn-primary {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
+<<<<<<< HEAD
+/* === GENERAL / COMÚN A TODAS LAS PÁGINAS === */
+
+/* El contenido arranca debajo de las dos franjas fijas (roja + blanca) */
+main {
+    margin-top: 140px; /* ajusta a 130–150px según qué tan alto esté tu logo */
+}
+
+/* ❌ IMPORTANTE: QUITAMOS ESTO PARA EVITAR LA LÍNEA BLANCA */
+/* body {
+    padding-top: 60px;
+} */
+
+
+/* ============================================
+   HEADER ROJA
+============================================ */
+=======
 main {
     margin-top: 140px; 
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .header-red {
     background-color: #d11212;
     color: white;
@@ -46,7 +87,11 @@ main {
     z-index: 2000;
     transition: top 0.3s ease;
 
+<<<<<<< HEAD
+    height: 60px;          /* franja roja exacta */
+=======
     height: 60px;          
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     padding: 0;
     display: flex;
     align-items: center;
@@ -67,6 +112,10 @@ main {
     position: relative;
 }
 
+<<<<<<< HEAD
+/* Contenedor del input + resultados (por si usas buscador) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .search-container {
     position: relative;
 }
@@ -80,6 +129,10 @@ main {
     outline: none;
 }
 
+<<<<<<< HEAD
+/* Caja de resultados de búsqueda */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .search-results {
     position: absolute;
     top: 110%;
@@ -115,12 +168,24 @@ main {
     background-color: #f3f3f3;
 }
 
+<<<<<<< HEAD
+/* ============================================
+   HEADER BLANCA
+============================================ */
+.header-white {
+    background-color: #ffffff;
+    padding: 12px 0;
+    border-top: 2px solid #d11212;  /* se pega a la roja */
+    position: fixed;
+    top: 60px; /* JUSTO debajo de la roja, sin hueco */
+=======
 .header-white {
     background-color: #ffffff;
     padding: 12px 0;
     border-top: 2px solid #d11212;  
     position: fixed;
     top: 60px; 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     left: 0;
     width: 100%;
     z-index: 1500;
@@ -136,6 +201,8 @@ main {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
 .social-media {
     display: flex;
     gap: 12px;              
@@ -162,11 +229,16 @@ main {
     display: inline-flex;
     align-items: center;
 }
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .logo img {
     max-width: 150px;
     display: block;
 }
 
+<<<<<<< HEAD
+/* Menú de navegación (desktop) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .nav-links {
     list-style: none;
     display: flex;
@@ -177,7 +249,11 @@ main {
 
 .nav-links li {
     display: inline-block;
+<<<<<<< HEAD
+    position: relative; /* necesario para dropdown */
+=======
     position: relative; 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 }
 
 .nav-links li a {
@@ -194,6 +270,12 @@ main {
     color: #d11212;
 }
 
+<<<<<<< HEAD
+/* ============================================
+   DROPDOWNS DEL MENÚ
+============================================ */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .dropdown-menu {
     list-style: none;
     position: absolute;
@@ -222,10 +304,18 @@ main {
     border-bottom: none;
 }
 
+<<<<<<< HEAD
+/* Mostrar submenú al pasar el mouse (escritorio) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
 
+<<<<<<< HEAD
+/* Ícono menú hamburguesa (oculto en escritorio) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .menu-icon {
     display: none;
     font-size: 28px;
@@ -233,6 +323,13 @@ main {
     user-select: none;
 }
 
+<<<<<<< HEAD
+/* =============================
+   FOOTER — ESTILO ELEGANTE AF
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .footer-af {
     background-color: var(--azul-af);
     color: #ffffff;
@@ -263,9 +360,20 @@ main {
     font-family: var(--font-texto);
 }
 
+<<<<<<< HEAD
+/* =============================
+   FOOTER — ESTILO GLOBAL AF
+============================= */
+
+/* Aplica tanto a <footer> como a <footer class="footer-af"> */
+footer,
+.footer-af {
+    background-color: var(--azul-af, #003366); /* fallback por si acaso */
+=======
 footer,
 .footer-af {
     background-color: var(--azul-af, #003366); 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     color: #ffffff;
     padding: 40px 0 25px;
     text-align: center;
@@ -301,6 +409,14 @@ footer,
     opacity: 0.7;
 }
 
+<<<<<<< HEAD
+
+
+/* ============================================
+   TÍTULO ELEGANTE
+============================================ */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .titulo-elegante {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 2.3em;
@@ -311,6 +427,12 @@ footer,
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
+/* ============================================
+   RESPONSIVE (MÓVIL)
+============================================ */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 768px) {
     .header-white .container {
         justify-content: space-between;
@@ -322,7 +444,11 @@ footer,
 
     .nav-links {
         position: absolute;
+<<<<<<< HEAD
+        top: 100px; /* debajo del header blanco fijo */
+=======
         top: 100px; 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
         right: 0;
         left: 0;
         background-color: #ffffff;
@@ -348,7 +474,11 @@ footer,
         width: 100%;
     }
 
+<<<<<<< HEAD
+    /* Dropdown adaptado a móvil */
+=======
     
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     .dropdown-menu {
         position: static;
         box-shadow: none;
@@ -364,6 +494,13 @@ footer,
     }
 }
 
+<<<<<<< HEAD
+/* ===========================
+   ANIMACIONES GLOBALES
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -391,6 +528,10 @@ footer,
     }
 }
 
+<<<<<<< HEAD
+/* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -420,9 +561,16 @@ footer,
     border-bottom: 2px solid crimson;
 }
 
+<<<<<<< HEAD
+/* ========= DROPDOWNS EN ESCRITORIO (FORZADO) ========= */
+@media (min-width: 769px) {
+
+    /* Estado base: oculto */
+=======
 @media (min-width: 769px) {
 
     
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     .nav-links .dropdown .dropdown-menu {
         display: none;
         opacity: 0;
@@ -430,6 +578,15 @@ footer,
         transition: opacity 0.2s ease;
     }
 
+<<<<<<< HEAD
+    /* Al pasar el mouse por encima de Cursos / Cultura */
+    .nav-links .dropdown:hover > .dropdown-menu {
+        display: block !important;   /* se impone sobre cualquier style="display:none" */
+        opacity: 1;
+        visibility: visible;
+    }
+}
+=======
     
     .nav-links .dropdown:hover > .dropdown-menu {
         display: block !important;   
@@ -437,3 +594,4 @@ footer,
         visibility: visible;
     }
 }
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

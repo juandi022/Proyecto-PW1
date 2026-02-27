@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+/* === ESTILOS ESPECÍFICOS DE GaleriaFotos.html === */
+=======
 ﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 
 .gallery-section {
     width: 90%;
@@ -11,6 +15,10 @@
     gap: 20px;
 }
 
+<<<<<<< HEAD
+/* Responsivo */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 1200px) {
     .gallery-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -45,6 +53,10 @@
     transition: transform 0.6s ease, filter 0.6s ease;
 }
 
+<<<<<<< HEAD
+/* Capa oscura + texto */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .gallery-item::before {
     content: "";
     position: absolute;
@@ -59,7 +71,11 @@
     left: 15px;
     right: 15px;
     bottom: 15px;
+<<<<<<< HEAD
+    color: #fff;
+=======
     color: #b7d4fa;
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
     font-size: 0.95rem;
     line-height: 1.3;
     opacity: 0;
@@ -68,6 +84,10 @@
     font-family: "Georgia", "Times New Roman", serif;
 }
 
+<<<<<<< HEAD
+/* Hover efecto pro */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .gallery-item:hover img {
     transform: scale(1.08);
     filter: brightness(0.9);
@@ -90,10 +110,21 @@
     animation: fadeIn 0.9s ease-out;
 }
 
+<<<<<<< HEAD
+/* Si quieres que cada foto suba */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .galeria-item {
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   ANIMACIONES – GALERÍA
+=========================== */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .galeria-hero {
     animation: fadeInDown 0.8s ease-out;
 }
@@ -102,8 +133,15 @@
     animation: fadeIn 0.9s ease-out;
 }
 
+<<<<<<< HEAD
+/* Si quieres que cada foto suba */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .gallery-item {
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

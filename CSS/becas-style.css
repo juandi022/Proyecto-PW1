@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+/* ==================================================
+   BECAS – ESTILO COHERENTE CON EL RESTO DEL SITIO
+================================================== */
+=======
 ﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 
 :root {
     --rojo-af: #d11212;
@@ -15,6 +21,13 @@
     --font-texto: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+<<<<<<< HEAD
+/* =============================
+   HERO BECAS
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .becas-header {
     padding: 90px 24px;
     text-align: center;
@@ -39,6 +52,13 @@
     opacity: 0.9;
 }
 
+<<<<<<< HEAD
+/* =============================
+   INTRO BECAS
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .becas-intro {
     width: 100%;
     padding: 60px 7%;
@@ -71,6 +91,13 @@
     color: var(--gris-texto);
 }
 
+<<<<<<< HEAD
+/* =============================
+   TARJETAS DE BECAS
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .becas-tarjetas {
     width: 100%;
     padding: 60px 6% 70px;
@@ -103,6 +130,10 @@
     gap: 30px;
 }
 
+<<<<<<< HEAD
+/* Tarjeta individual */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .beca-card {
     width: 300px;
     background: var(--blanco);
@@ -160,6 +191,13 @@
     letter-spacing: 0.05em;
 }
 
+<<<<<<< HEAD
+/* =============================
+   CONTACTO BECAS
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .becas-contacto {
     width: 100%;
     padding: 60px 6% 70px;
@@ -218,6 +256,13 @@
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
+/* =============================
+   ANIMACIONES
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -245,6 +290,10 @@
     }
 }
 
+<<<<<<< HEAD
+/* Respeto a usuarios con reducción de movimiento */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -253,6 +302,13 @@
     }
 }
 
+<<<<<<< HEAD
+/* =============================
+   RESPONSIVE
+============================= */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 768px) {
     .becas-header {
         font-size: 2.1rem;
@@ -279,4 +335,7 @@
         padding: 26px 18px;
     }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d

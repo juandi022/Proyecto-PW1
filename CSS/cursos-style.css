@@ -1,4 +1,10 @@
+<<<<<<< HEAD
+/* ===========================
+   CURSOS - PÁGINA PRINCIPAL
+=========================== */
+=======
 ﻿
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 
 :root {
     --rojo-af: #d11212;
@@ -7,10 +13,19 @@
     --gris-fondo: #f4f5f8;
 }
 
+<<<<<<< HEAD
+/* Fondo suave en toda la parte baja */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 main {
     background-color: var(--gris-fondo);
 }
 
+<<<<<<< HEAD
+/* ---------- HERO GENERAL ---------- */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .intro-cursos {
     padding: 80px 8% 70px;
     text-align: center;
@@ -32,6 +47,11 @@ main {
     line-height: 1.9;
 }
 
+<<<<<<< HEAD
+/* ---------- RESUMEN DE CATEGORÍAS ---------- */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .resumen-categorias {
     max-width: 1200px;
     margin: 0 auto;
@@ -58,6 +78,10 @@ main {
     gap: 28px;
 }
 
+<<<<<<< HEAD
+/* Tarjeta de categoría (Niños, Adolescentes, Adultos) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-card {
     background: #ffffff;
     border-radius: 20px;
@@ -77,11 +101,19 @@ main {
     box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
 }
 
+<<<<<<< HEAD
+/* Icono grande arriba (emoji) */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-icono {
     font-size: 2rem;
     margin-bottom: 4px;
 }
 
+<<<<<<< HEAD
+/* Título de categoría */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
@@ -89,12 +121,20 @@ main {
     margin: 0;
 }
 
+<<<<<<< HEAD
+/* Descripción corta */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-card p {
     font-size: 0.97rem;
     color: #555555;
     margin: 5px 0 6px;
 }
 
+<<<<<<< HEAD
+/* Lista de ejemplos dentro de cada categoría */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-card ul {
     list-style: disc;
     padding-left: 18px;
@@ -107,6 +147,10 @@ main {
     margin-bottom: 2px;
 }
 
+<<<<<<< HEAD
+/* Link de acción dentro de la tarjeta */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-link {
     margin-top: 6px;
     font-size: 0.95rem;
@@ -114,6 +158,11 @@ main {
     color: var(--rojo-af);
 }
 
+<<<<<<< HEAD
+/* ---------- BLOQUE DE CERTIFICACIONES ---------- */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .info-certificaciones {
     padding: 40px 3% 60px;
     background-color: #ffffff;
@@ -139,6 +188,11 @@ main {
     line-height: 1.8;
 }
 
+<<<<<<< HEAD
+/* ---------- RESPONSIVE ---------- */
+
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 @media (max-width: 992px) {
     .intro-cursos {
         padding: 70px 6% 60px;
@@ -169,24 +223,51 @@ main {
     }
 }
 
+<<<<<<< HEAD
+/* Hero de cursos */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .intro-cursos {
     animation: fadeInDown 0.8s ease-out;
 }
 
+<<<<<<< HEAD
+/* Las tarjetas de cursos suben suave */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .curso-card {
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
+/* ===========================
+   ANIMACIONES – CURSOS (PÁGINA PRINCIPAL)
+=========================== */
+
+/* Hero de cursos */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .intro-cursos {
     animation: fadeInDown 0.8s ease-out;
 }
 
+<<<<<<< HEAD
+/* Tarjetas de categorías o cursos */
+=======
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
 .categoria-card,
 .curso-card {
     animation: fadeUp 0.7s ease-out;
 }
 
+<<<<<<< HEAD
+/* Bloque de certificaciones */
+.info-certificaciones {
+    animation: fadeIn 0.9s ease-out;
+}
+=======
 .info-certificaciones {
     animation: fadeIn 0.9s ease-out;
 }
 
+>>>>>>> d088287c1b6a0f473f98787b7ffe98f59fb5750d
